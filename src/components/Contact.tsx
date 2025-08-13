@@ -15,10 +15,30 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!formData.name || !formData.message) {
+      toast({
+        title: "Error",
+        description: "Please fill in all required fields",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Format message for WhatsApp
+    const message = `*New Contact Form Submission*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone || 'Not provided'}%0A*Message:* ${formData.message}`;
+    
+    // WhatsApp URL
+    const whatsappUrl = `https://wa.me/919656778508?text=${message}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. We'll get back to you soon.",
+      title: "Redirecting to WhatsApp",
+      description: "Your message is being sent via WhatsApp",
     });
+    
     setFormData({ name: "", phone: "", message: "" });
   };
 
