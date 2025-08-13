@@ -8,51 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Ad Atelier Brand Colors */
+    --brand-deep-blue: 217 100% 43%;
+    --brand-mid-blue: 208 100% 50%;
+    --brand-dark-navy: 0 0% 4%;
+    --brand-light-gray: 0 0% 88%;
+    --brand-white: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand-deep-blue)), hsl(var(--brand-mid-blue)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--brand-white)) 0%, hsl(var(--brand-light-gray)) 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-deep-blue) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--brand-mid-blue) / 0.3);
+    
+    /* Core Design System */
+    --background: var(--brand-white);
+    --foreground: var(--brand-dark-navy);
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: var(--brand-white);
+    --card-foreground: var(--brand-dark-navy);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: var(--brand-white);
+    --popover-foreground: var(--brand-dark-navy);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: var(--brand-deep-blue);
+    --primary-foreground: var(--brand-white);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: var(--brand-light-gray);
+    --secondary-foreground: var(--brand-dark-navy);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: var(--brand-light-gray);
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: var(--brand-mid-blue);
+    --accent-foreground: var(--brand-white);
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: var(--brand-white);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: var(--brand-light-gray);
+    --input: var(--brand-light-gray);
+    --ring: var(--brand-deep-blue);
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: var(--brand-white);
+    --sidebar-foreground: var(--brand-dark-navy);
+    --sidebar-primary: var(--brand-deep-blue);
+    --sidebar-primary-foreground: var(--brand-white);
+    --sidebar-accent: var(--brand-light-gray);
+    --sidebar-accent-foreground: var(--brand-dark-navy);
+    --sidebar-border: var(--brand-light-gray);
+    --sidebar-ring: var(--brand-mid-blue);
   }
 
   .dark {
@@ -101,5 +110,41 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .font-brand-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  
+  .font-brand-body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
   }
 }
