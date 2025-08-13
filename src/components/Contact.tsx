@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -9,7 +9,6 @@ const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
     message: ""
   });
@@ -20,7 +19,7 @@ const Contact = () => {
       title: "Message Sent!",
       description: "Thank you for your message. We'll get back to you soon.",
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({ name: "", phone: "", message: "" });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -71,20 +70,6 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-brand-mid-blue rounded-lg flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-brand-white" />
-                </div>
-                <div>
-                  <h4 className="font-brand-heading text-lg text-brand-dark-navy">Email</h4>
-                  <a 
-                    href="mailto:hello@adatelier.com" 
-                    className="font-brand-body text-brand-deep-blue hover:text-brand-mid-blue transition-colors duration-300"
-                  >
-                    hello@adatelier.com
-                  </a>
-                </div>
-              </div>
               
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-brand-deep-blue rounded-lg flex items-center justify-center">
@@ -127,21 +112,6 @@ const Contact = () => {
                     className="font-brand-body"
                   />
                 </div>
-              </div>
-              
-              <div>
-                <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-2 block">
-                  Email *
-                </label>
-                <Input
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="your.email@example.com"
-                  required
-                  className="font-brand-body"
-                />
               </div>
               
               <div>

@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-brand-heading text-lg text-brand-white">Quick Links</h4>
             <div className="space-y-2">
-              {["About", "Services", "Portfolio", "Contact"].map((link) => (
+              {["About", "Services", "Contact"].map((link) => (
                 <a
                   key={link}
                   href={`#${link.toLowerCase()}`}
@@ -45,15 +45,6 @@ const Footer = () => {
                   className="font-brand-body text-brand-white/70 hover:text-brand-mid-blue transition-colors duration-300 text-sm"
                 >
                   +91 9656778508
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-brand-mid-blue" />
-                <a 
-                  href="mailto:hello@adatelier.com"
-                  className="font-brand-body text-brand-white/70 hover:text-brand-mid-blue transition-colors duration-300 text-sm"
-                >
-                  hello@adatelier.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
