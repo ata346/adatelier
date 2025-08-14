@@ -28,23 +28,6 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-brand-deep-blue rounded-full flex items-center justify-center mx-auto mb-4 shadow-elegant">
-                <span className="font-brand-heading text-2xl text-brand-white">5+</span>
-              </div>
-              <h3 className="font-brand-heading text-lg text-brand-dark-navy mb-2">Years Experience</h3>
-              <p className="font-brand-body text-sm text-brand-dark-navy/60">In Creative Industry</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-brand-mid-blue rounded-full flex items-center justify-center mx-auto mb-4 shadow-elegant">
-                <span className="font-brand-heading text-2xl text-brand-white">100+</span>
-              </div>
-              <h3 className="font-brand-heading text-lg text-brand-dark-navy mb-2">Happy Clients</h3>
-              <p className="font-brand-body text-sm text-brand-dark-navy/60">Successful Projects</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
