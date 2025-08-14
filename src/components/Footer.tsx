@@ -1,7 +1,7 @@
 import { Phone, MapPin } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="bg-brand-dark-navy text-brand-white py-12">
+  return <footer className="bg-brand-dark-navy text-brand-white py-8 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand Section */}

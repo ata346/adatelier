@@ -50,21 +50,21 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-brand-light-gray/30">
+    <section id="contact" className="py-16 md:py-20 bg-brand-light-gray/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-brand-heading text-4xl md:text-5xl lg:text-6xl mb-6 text-brand-dark-navy">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="font-brand-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-brand-dark-navy px-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <div className="w-24 h-1 bg-brand-mid-blue mx-auto mb-8"></div>
-          <p className="font-brand-body text-lg text-brand-dark-navy/70 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-brand-mid-blue mx-auto mb-6 md:mb-8"></div>
+          <p className="font-brand-body text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-4">
             Ready to transform your brand? Let's discuss your project and create something amazing together.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
             <div>
               <h3 className="font-brand-heading text-2xl mb-6 text-brand-dark-navy">
                 Let's Start a Conversation
@@ -104,9 +104,9 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <div className="bg-background rounded-2xl p-8 shadow-elegant">
+          <div className="bg-background rounded-2xl p-6 md:p-8 shadow-elegant order-1 lg:order-2">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                 <div>
                   <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-2 block">
                     Name *

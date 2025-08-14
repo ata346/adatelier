@@ -14,15 +14,15 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           {/* Logo */}
-          <h1 className="font-brand-heading text-6xl md:text-8xl lg:text-9xl mb-4 gradient-text tracking-tight">
+          <h1 className="font-brand-heading text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-4 gradient-text tracking-tight">
             Ad Atelier
           </h1>
           
           {/* Slogan */}
-          <p className="font-brand-body text-xl md:text-2xl lg:text-3xl text-brand-dark-navy mb-8 max-w-4xl mx-auto leading-relaxed">Designing Influence, Not Just Attention</p>
+          <p className="font-brand-body text-lg sm:text-xl md:text-2xl lg:text-3xl text-brand-dark-navy mb-8 max-w-4xl mx-auto leading-relaxed px-4">Designing Influence, Not Just Attention</p>
           
           {/* CTA Button */}
-          <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-4 group">
+          <Button variant="hero" size="lg" onClick={scrollToContact} className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 group">
             Get Started
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
           </Button>
