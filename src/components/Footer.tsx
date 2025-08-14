@@ -9,7 +9,7 @@ const Footer = () => {
             <h3 className="font-brand-heading text-2xl gradient-text">
               Ad Atelier
             </h3>
-            <p className="font-brand-body text-brand-white/70 text-sm leading-relaxed">Crafting creative solutions for modern advertising. We help brands tell their stories through innovative design and strategic ca</p>
+            <p className="font-brand-body text-brand-white/70 text-sm leading-relaxed">Designing Influence, Not Just Attention</p>
           </div>
 
           {/* Quick Links */}
