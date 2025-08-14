@@ -24,11 +24,6 @@ const Services = () => {
       description: "Eye-catching digital wall advertisements designed to capture attention and deliver your message effectively."
     },
     {
-      icon: Settings,
-      title: "Digital Wall Setup",
-      description: "Complete digital wall installation and setup services, from hardware configuration to content management systems."
-    },
-    {
       icon: Share2,
       title: "Social Media Branding",
       description: "Comprehensive social media presence development with consistent branding across all platforms and engaging content."
