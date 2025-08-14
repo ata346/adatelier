@@ -42,9 +42,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-brand-white/20 mt-8 pt-8 text-center">
+        <div className="border-t border-brand-white/20 mt-8 pt-8 text-center space-y-2">
           <p className="font-brand-body text-brand-white/60 text-sm">
             © {currentYear} Ad Atelier. All rights reserved.
+          </p>
+          <p className="font-brand-body text-brand-white/50 text-xs">
+            Engineered by{" "}
+            <a 
+              href="https://adwebcomicagency.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-brand-accent hover:text-brand-accent/80 transition-colors duration-300"
+            >
+              Ad Web Comic Agency
+            </a>
           </p>
         </div>
       </div>
