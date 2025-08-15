@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Instagram } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-brand-dark-navy text-brand-white py-8 md:py-12">
@@ -37,6 +37,17 @@ const Footer = () => {
                 <span className="font-brand-body text-brand-white/70 text-sm">
                   Kerala, India
                 </span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Instagram className="w-4 h-4 text-brand-mid-blue" />
+                <a 
+                  href="https://www.instagram.com/ad.atelier.eo/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-brand-body text-brand-white/70 hover:text-brand-mid-blue transition-colors duration-300 text-sm"
+                >
+                  @ad.atelier.eo
+                </a>
               </div>
             </div>
           </div>
