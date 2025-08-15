@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 import { Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -10,8 +12,17 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    message: ""
+    message: "",
+    budget: "",
+    services: [] as string[]
   });
+
+  const availableServices = [
+    "Branding",
+    "Ads Running", 
+    "Digital Wall Ads Creating",
+    "Social Media Branding"
+  ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,7 +37,9 @@ const Contact = () => {
     }
 
     // Format message for WhatsApp
-    const message = `*New Contact Form Submission*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone || 'Not provided'}%0A*Message:* ${formData.message}`;
+    const servicesText = formData.services.length > 0 ? formData.services.join(', ') : 'Not specified';
+    const budgetText = formData.budget || 'Not specified';
+    const message = `*New Contact Form Submission*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone || 'Not provided'}%0A*Services:* ${servicesText}%0A*Budget:* ${budgetText}%0A*Message:* ${formData.message}`;
     
     // WhatsApp URL
     const whatsappUrl = `https://wa.me/919656778508?text=${message}`;
@@ -39,7 +52,7 @@ const Contact = () => {
       description: "Your message is being sent via WhatsApp",
     });
     
-    setFormData({ name: "", phone: "", message: "" });
+    setFormData({ name: "", phone: "", message: "", budget: "", services: [] });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -47,6 +60,20 @@ const Contact = () => {
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleServiceChange = (service: string, checked: boolean) => {
+    if (checked) {
+      setFormData({
+        ...formData,
+        services: [...formData.services, service]
+      });
+    } else {
+      setFormData({
+        ...formData,
+        services: formData.services.filter(s => s !== service)
+      });
+    }
   };
 
   return (
@@ -132,6 +159,44 @@ const Contact = () => {
                     className="font-brand-body"
                   />
                 </div>
+              </div>
+              
+              <div>
+                <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-3 block">
+                  Services Interested In
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {availableServices.map((service) => (
+                    <div key={service} className="flex items-center space-x-2">
+                      <Checkbox
+                        id={service}
+                        checked={formData.services.includes(service)}
+                        onCheckedChange={(checked) => 
+                          handleServiceChange(service, checked as boolean)
+                        }
+                      />
+                      <Label 
+                        htmlFor={service} 
+                        className="font-brand-body text-sm text-brand-dark-navy cursor-pointer"
+                      >
+                        {service}
+                      </Label>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div>
+                <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-2 block">
+                  Budget Range
+                </label>
+                <Input
+                  name="budget"
+                  value={formData.budget}
+                  onChange={handleChange}
+                  placeholder="e.g., $5,000 - $10,000"
+                  className="font-brand-body"
+                />
               </div>
               
               <div>
