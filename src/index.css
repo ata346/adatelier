@@ -147,4 +147,136 @@ All colors MUST be HSL.
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
+  
+  /* WhatsApp Widget Styles */
+  .widgetify-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0057D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    border: none;
+    outline: none;
+  }
+
+  .widgetify-widget:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .widgetify-popup {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    max-width: 90vw;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .widgetify-popup.show {
+    display: flex;
+    animation: fadeInUp 0.3s ease;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .widgetify-header {
+    background-color: #f3f4f6;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 0 -20px;
+  }
+
+  .widgetify-header h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+  }
+
+  .widgetify-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .widgetify-close:hover {
+    color: #374151;
+  }
+
+  .widgetify-watermark {
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    text-align: center;
+    margin: 20px -20px -20px -20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .widgetify-watermark a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .widgetify-watermark a:hover {
+    color: #374151;
+  }
+
+  /* Responsive Mobile Design for WhatsApp Widget */
+  @media (max-width: 480px) {
+    .widgetify-widget {
+      bottom: 15px;
+      right: 15px;
+    }
+    
+    .widgetify-popup {
+      bottom: 85px;
+      right: 15px;
+      max-width: calc(100vw - 30px) !important;
+      margin: 0 !important;
+      border-radius: 8px !important;
+      padding: 16px !important;
+    }
+  }
 }
