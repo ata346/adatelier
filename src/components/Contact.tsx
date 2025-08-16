@@ -77,40 +77,40 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-20 bg-brand-light-gray/30">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-brand-light-gray/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-brand-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-brand-dark-navy px-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="font-brand-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-brand-dark-navy px-2 sm:px-4 leading-tight">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <div className="w-24 h-1 bg-brand-mid-blue mx-auto mb-6 md:mb-8"></div>
-          <p className="font-brand-body text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-4">
+          <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
+          <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
             Ready to transform your brand? Let's discuss your project and create something amazing together.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {/* Contact Information */}
-          <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
+          <div className="space-y-4 sm:space-y-6 md:space-y-8 order-2 lg:order-1 px-2 sm:px-0">
             <div>
-              <h3 className="font-brand-heading text-2xl mb-6 text-brand-dark-navy">
+              <h3 className="font-brand-heading text-xl sm:text-2xl mb-4 sm:mb-6 text-brand-dark-navy leading-tight">
                 Let's Start a Conversation
               </h3>
-              <p className="font-brand-body text-brand-dark-navy/70 mb-8">
+              <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70 mb-6 sm:mb-8 leading-relaxed">
                 We're here to help you bring your vision to life. Reach out to us through any of the following channels:
               </p>
             </div>
             
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-brand-deep-blue rounded-lg flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-brand-white" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-deep-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-brand-white" />
                 </div>
-                <div>
-                  <h4 className="font-brand-heading text-lg text-brand-dark-navy">Phone</h4>
+                <div className="min-w-0">
+                  <h4 className="font-brand-heading text-base sm:text-lg text-brand-dark-navy">Phone</h4>
                   <a 
                     href="tel:+919656778508" 
-                    className="font-brand-body text-brand-deep-blue hover:text-brand-mid-blue transition-colors duration-300"
+                    className="font-brand-body text-sm sm:text-base text-brand-deep-blue hover:text-brand-mid-blue transition-colors duration-300 break-all"
                   >
                     +91 9656778508
                   </a>
@@ -118,24 +118,24 @@ const Contact = () => {
               </div>
               
               
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-brand-deep-blue rounded-lg flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-brand-white" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-deep-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-brand-white" />
                 </div>
-                <div>
-                  <h4 className="font-brand-heading text-lg text-brand-dark-navy">Location</h4>
-                  <p className="font-brand-body text-brand-dark-navy/70">Kerala, India</p>
+                <div className="min-w-0">
+                  <h4 className="font-brand-heading text-base sm:text-lg text-brand-dark-navy">Location</h4>
+                  <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70">Kerala, India</p>
                 </div>
               </div>
             </div>
           </div>
           
           {/* Contact Form */}
-          <div className="bg-background rounded-2xl p-6 md:p-8 shadow-elegant order-1 lg:order-2">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+          <div className="bg-background rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant order-1 lg:order-2">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
-                  <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-2 block">
+                  <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-2 block">
                     Name *
                   </label>
                   <Input
@@ -144,11 +144,11 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your full name"
                     required
-                    className="font-brand-body"
+                    className="font-brand-body text-sm sm:text-base h-10 sm:h-11"
                   />
                 </div>
                 <div>
-                  <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-2 block">
+                  <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-2 block">
                     Phone
                   </label>
                   <Input
@@ -156,28 +156,29 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Your phone number"
-                    className="font-brand-body"
+                    className="font-brand-body text-sm sm:text-base h-10 sm:h-11"
                   />
                 </div>
               </div>
               
               <div>
-                <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-3 block">
+                <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-3 block">
                   Services Interested In
                 </label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 gap-2 sm:gap-3">
                   {availableServices.map((service) => (
-                    <div key={service} className="flex items-center space-x-2">
+                    <div key={service} className="flex items-start space-x-2 p-2 sm:p-0">
                       <Checkbox
                         id={service}
                         checked={formData.services.includes(service)}
                         onCheckedChange={(checked) => 
                           handleServiceChange(service, checked as boolean)
                         }
+                        className="mt-0.5 sm:mt-0"
                       />
                       <Label 
                         htmlFor={service} 
-                        className="font-brand-body text-sm text-brand-dark-navy cursor-pointer"
+                        className="font-brand-body text-xs sm:text-sm text-brand-dark-navy cursor-pointer leading-relaxed flex-1"
                       >
                         {service}
                       </Label>
@@ -187,7 +188,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-2 block">
+                <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-2 block">
                   Budget Range
                 </label>
                 <Input
@@ -195,12 +196,12 @@ const Contact = () => {
                   value={formData.budget}
                   onChange={handleChange}
                   placeholder="e.g., $5,000 - $10,000"
-                  className="font-brand-body"
+                  className="font-brand-body text-sm sm:text-base h-10 sm:h-11"
                 />
               </div>
               
               <div>
-                <label className="font-brand-body text-sm font-medium text-brand-dark-navy mb-2 block">
+                <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-2 block">
                   Message *
                 </label>
                 <Textarea
@@ -208,16 +209,16 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Tell us about your project..."
-                  rows={5}
+                  rows={4}
                   required
-                  className="font-brand-body resize-none"
+                  className="font-brand-body resize-none text-sm sm:text-base min-h-[100px] sm:min-h-[120px]"
                 />
               </div>
               
               <Button
                 type="submit"
                 variant="contact"
-                className="w-full group"
+                className="w-full group h-11 sm:h-12 text-sm sm:text-base"
               >
                 Send Message
                 <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />

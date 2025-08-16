@@ -18,9 +18,14 @@ export default {
 			}
 		},
 		extend: {
+			screens: {
+				'xs': '475px',
+			},
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
+				'brand-heading': ['Montserrat', 'sans-serif'],
+				'brand-body': ['Poppins', 'sans-serif'],
 			},
 			colors: {
 				/* Brand Colors */
