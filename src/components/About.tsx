@@ -26,6 +26,23 @@ const About = () => {
             creativity and data-driven insights.
           </p>
         </div>
+        
+        {/* Freelancer CTA */}
+        <div className="max-w-2xl mx-auto text-center mt-12 md:mt-16 px-4">
+          <div className="bg-gradient-to-br from-brand-white to-brand-light-blue/5 rounded-2xl p-6 md:p-8 shadow-elegant border border-brand-mid-blue/10">
+            <a
+              href="https://forms.gle/hU9EcCz7a4eBMXkKA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-brand-mid-blue text-brand-white hover:bg-brand-deep-blue rounded-lg font-brand-body font-semibold text-base md:text-lg transition-all duration-300 shadow-glow hover:shadow-elegant group"
+            >
+              Join as a Freelancer
+            </a>
+            <p className="font-brand-body text-sm md:text-base text-brand-dark-navy/70 leading-relaxed mt-4">
+              Join our creative team and help craft compelling visual experiences that transform brands and drive real engagement.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
