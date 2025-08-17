@@ -19,6 +19,7 @@ const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
+    { name: "How We Work", href: "#how-we-work" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -46,12 +47,12 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="font-brand-body text-brand-dark-navy hover:text-brand-deep-blue transition-colors duration-300 relative group"
+                className="font-brand-body text-sm xl:text-base text-brand-dark-navy hover:text-brand-deep-blue transition-colors duration-300 relative group whitespace-nowrap"
               >
                 {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-deep-blue transition-all duration-300 group-hover:w-full"></span>
@@ -67,7 +68,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Button
               variant="ghost"
               size="icon"
@@ -80,7 +81,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-md rounded-lg mt-2 shadow-elegant">
               {navItems.map((item) => (
                 <button
