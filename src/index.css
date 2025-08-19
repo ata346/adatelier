@@ -317,12 +317,60 @@ All colors MUST be HSL.
     .gap-responsive {
       gap: 0.75rem;
     }
+
+    /* Prevent horizontal scrolling on mobile */
+    body {
+      overflow-x: hidden;
+    }
+
+    /* Improve readability on small screens */
+    h1, h2, h3, h4, h5, h6 {
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+
+    /* Better mobile form inputs */
+    input, textarea, select {
+      font-size: 16px; /* Prevents zoom on iOS */
+      border-radius: 8px;
+    }
   }
 
   /* Enhanced button touch targets for mobile */
   button, a[role="button"], input[type="button"], input[type="submit"] {
     min-height: 44px;
     min-width: 44px;
+  }
+
+  /* Mobile viewport adjustments */
+  @media (max-width: 768px) {
+    /* Better mobile navigation */
+    nav {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    /* Improved mobile cards */
+    .shadow-elegant {
+      box-shadow: 0 4px 15px -5px hsl(var(--brand-deep-blue) / 0.15);
+    }
+
+    /* Better mobile typography */
+    .gradient-text {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      word-wrap: break-word;
+    }
+
+    /* Mobile-friendly animations */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   }
 
   /* Smooth scrolling for all browsers */
