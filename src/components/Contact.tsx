@@ -18,10 +18,10 @@ const Contact = () => {
   });
 
   const availableServices = [
-    "Branding",
-    "Ads Running", 
-    "Digital Wall Ads Creating",
-    "Social Media Branding"
+    "Strategic Branding",
+    "Influence-Driven Campaigns", 
+    "Digital Experience Design",
+    "Social Influence Strategy"
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -85,7 +85,7 @@ const Contact = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            Ready to transform your brand? Let's discuss your project and create something amazing together.
+            Ready to design influence that drives real results? Let's discuss your project and assemble the perfect team to bring your vision to life.
           </p>
         </div>
         
@@ -97,7 +97,7 @@ const Contact = () => {
                 Let's Start a Conversation
               </h3>
               <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70 mb-6 sm:mb-8 leading-relaxed">
-                We're here to help you bring your vision to life. Reach out to us through any of the following channels:
+                Ready to design influence, not just attention? Let's assemble the perfect team of specialists for your project and create something that truly makes an impact.
               </p>
             </div>
             

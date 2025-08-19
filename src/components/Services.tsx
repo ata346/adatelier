@@ -10,23 +10,23 @@ const Services = () => {
   const services = [
     {
       icon: Palette,
-      title: "Branding",
-      description: "Complete brand identity development including logos, color schemes, and brand guidelines that make your business memorable."
+      title: "Strategic Branding",
+      description: "Complete brand identity that influences perception and drives action. We create memorable identities that don't just look good—they work strategically to position your brand for influence."
     },
     {
       icon: Megaphone,
-      title: "Ads Running",
-      description: "Strategic ad campaign management across all platforms to maximize your reach and optimize conversion rates."
+      title: "Influence-Driven Campaigns",
+      description: "Strategic campaign development and management that goes beyond reach. We create campaigns designed to influence decisions, not just capture attention."
     },
     {
       icon: Monitor,
-      title: "Digital Wall Ads Creating",
-      description: "Eye-catching digital wall advertisements designed to capture attention and deliver your message effectively."
+      title: "Digital Experience Design",
+      description: "Compelling digital experiences across all touchpoints. From websites to digital advertisements, we design interfaces that engage and influence your audience meaningfully."
     },
     {
       icon: Share2,
-      title: "Social Media Branding",
-      description: "Comprehensive social media presence development with consistent branding across all platforms and engaging content."
+      title: "Social Influence Strategy",
+      description: "Strategic social media presence that builds genuine influence. We develop content and strategies that create lasting engagement and drive real business results."
     }
   ];
 
@@ -39,7 +39,7 @@ const Services = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            We offer comprehensive advertising solutions tailored to meet your unique business needs and drive exceptional results.
+            Our curated network of specialists delivers strategic solutions that create influence, not just attention. Every service is designed to drive meaningful engagement and lasting impact.
           </p>
         </div>
         

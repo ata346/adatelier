@@ -11,19 +11,19 @@ const About = () => {
         
         <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-5 md:space-y-6 px-2 sm:px-4">
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            At Ad Atelier, we believe in the power of creative storytelling and innovative design. 
-            Our team of passionate professionals specializes in transforming brand visions into 
-            compelling visual experiences.
+            At Ad Atelier, we don't just create—we design influence. Operating through a network of 
+            highly skilled freelance creatives, we assemble the right team for every project. 
+            No full-time employees, no unnecessary overhead—just the expertise your brand requires.
           </p>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            From traditional advertising to cutting-edge digital solutions, we craft campaigns 
-            that resonate with your audience and drive meaningful engagement. Our holistic 
-            approach ensures your brand message reaches the right people at the right time.
+            From our curated network of freelancers, we select specialists best suited for your project—designers, 
+            strategists, and storytellers—ensuring the right skills are applied at the right time. 
+            We deliver projects that make an impact, creating results that matter, not just attention.
           </p>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            With years of experience in the advertising industry, we've helped countless brands 
-            establish their unique identity and achieve their marketing goals through strategic 
-            creativity and data-driven insights.
+            We combine the flexibility of a freelance network with the reliability of an agency. 
+            Whether it's campaigns, branding, or social content, we transform brand visions into 
+            compelling experiences that genuinely engage and influence your audience.
           </p>
         </div>
         
