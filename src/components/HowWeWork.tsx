@@ -36,7 +36,10 @@ const HowWeWork = () => {
         
         <div className="max-w-4xl mx-auto text-center mb-10 sm:mb-12 md:mb-16 px-2 sm:px-4">
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            At Ad Atelier, we don't just create we design influence. Operating through a network of highly skilled freelance creatives, we assemble the right team for every project. No full-time employees, no unnecessary overhead just the expertise your brand requires.
+            At Kerala's leading branding agency, we don't just create—we design influence. Operating through 
+            a network of highly skilled freelance creatives across Kozhikode and India, we assemble the 
+            right team for every project. No full-time employees, no unnecessary overhead—just the creative 
+            expertise your brand requires from the best professionals near you.
           </p>
         </div>
 

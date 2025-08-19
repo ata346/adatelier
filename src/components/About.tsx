@@ -4,26 +4,29 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="font-brand-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-brand-dark-navy px-2 sm:px-4 leading-tight">
-            About <span className="gradient-text">Ad Atelier</span>
+            About <span className="gradient-text">Kerala's Leading Creative Agency</span>
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
         </div>
         
         <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-5 md:space-y-6 px-2 sm:px-4">
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            At Ad Atelier, we don't just create—we design influence. Operating through a network of 
-            highly skilled freelance creatives, we assemble the right team for every project. 
-            No full-time employees, no unnecessary overhead—just the expertise your brand requires.
+            At Ad Atelier, Kerala's leading branding agency, we don't just create—we design influence. 
+            Operating through a network of highly skilled freelance creatives in Kozhikode and across India, 
+            we assemble the right team for every project. No full-time employees, no unnecessary overhead—just 
+            the expertise your brand requires from the best creative professionals near you.
           </p>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            From our curated network of freelancers, we select specialists best suited for your project—designers, 
-            strategists, and storytellers—ensuring the right skills are applied at the right time. 
-            We deliver projects that make an impact, creating results that matter, not just attention.
+            As a premier digital marketing agency in Kerala, we select specialists best suited for your 
+            project—brand designers, strategic marketers, and creative storytellers—ensuring the right 
+            skills are applied at the right time. We deliver campaigns that make an impact, creating 
+            measurable results that matter, not just attention-grabbing visuals.
           </p>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            We combine the flexibility of a freelance network with the reliability of an agency. 
-            Whether it's campaigns, branding, or social content, we transform brand visions into 
-            compelling experiences that genuinely engage and influence your audience.
+            We combine the flexibility of a freelance creative network with the reliability of an 
+            established advertising agency. Whether it's strategic branding campaigns, social media marketing, 
+            or comprehensive digital experiences, we transform brand visions into compelling experiences 
+            that genuinely engage and influence your target audience across Kerala and beyond.
           </p>
         </div>
         
