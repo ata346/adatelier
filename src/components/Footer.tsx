@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="flex items-center justify-center sm:justify-start space-x-2 sm:space-x-3">
                 <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-brand-mid-blue flex-shrink-0" />
                 <span className="font-brand-body text-brand-white/70 text-xs sm:text-sm">
-                  Kerala, India
+                  Ulliyeri, Kozhikode, India
                 </span>
               </div>
               <div className="flex items-center justify-center sm:justify-start space-x-2 sm:space-x-3">

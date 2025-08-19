@@ -124,7 +124,7 @@ const Contact = () => {
                 </div>
                 <div className="min-w-0">
                   <h4 className="font-brand-heading text-base sm:text-lg text-brand-dark-navy">Location</h4>
-                  <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70">Kerala, India</p>
+                  <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70">Ulliyeri, Kozhikode, India</p>
                 </div>
               </div>
             </div>
