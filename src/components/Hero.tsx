@@ -19,9 +19,7 @@ const Hero = () => {
           </h1>
           
           {/* SEO-optimized slogan */}
-          <h2 className="font-brand-body text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-brand-dark-navy mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4">
-            Best Branding Agency Near Me - Designing Influence, Not Just Attention
-          </h2>
+          <h2 className="font-brand-body text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-brand-dark-navy mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"> Designing Influence - Not Just Attention</h2>
           
           {/* CTA Button */}
           <Button variant="hero" size="lg" onClick={scrollToContact} className="text-sm xs:text-base md:text-lg px-4 xs:px-6 md:px-8 py-3 md:py-4 group w-auto min-w-[140px] sm:min-w-[160px]" aria-label="Contact Kerala's best branding agency for consultation">
