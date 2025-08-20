@@ -11,20 +11,19 @@ const About = () => {
         
         <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-5 md:space-y-6 px-2 sm:px-4">
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            At Ad Atelier, we don't just create—we design influence. Operating through a network of highly 
-            skilled freelance creatives, we assemble the right team for every project. No full-time employees, 
-            no unnecessary overhead—just the expertise your brand requires from the best creative professionals.
+            Struggling with agencies that promise the world but deliver generic solutions? At Ad Atelier, we solve 
+            the fundamental problem of mismatched expertise. Our network-based approach means you get the exact 
+            specialist your project needs—no junior staff, no learning curves on your dime.
           </p>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            We select specialists best suited for your project—brand designers, strategic marketers, and 
-            creative storytellers—ensuring the right skills are applied at the right time. We deliver 
-            campaigns that make an impact, creating measurable results that matter, not just attention-grabbing visuals.
+            Tired of campaigns that look impressive but don't move the needle? We focus on influence-driven results 
+            that directly impact your business goals. Every creative decision is strategically aligned with measurable 
+            outcomes that matter to your bottom line.
           </p>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            We combine the flexibility of a freelance creative network with the reliability of an established 
-            agency. Whether it's strategic branding campaigns, social media marketing, or comprehensive digital 
-            experiences, we transform brand visions into compelling experiences that genuinely engage and 
-            influence your target audience.
+            Frustrated with slow processes and bloated agency overhead? Our streamlined network delivers the 
+            reliability of an established agency with the agility and cost-effectiveness of working directly 
+            with top-tier specialists. You get faster results, better value, and direct access to expertise.
           </p>
         </div>
         
