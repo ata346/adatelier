@@ -16,8 +16,14 @@ const Footer = () => {
           <div className="space-y-3 sm:space-y-4 text-center sm:text-left">
             <h4 className="font-brand-heading text-base sm:text-lg text-brand-white">Quick Links</h4>
             <div className="flex sm:flex-col items-center sm:items-start justify-center sm:justify-start space-x-4 sm:space-x-0 sm:space-y-2">
-              {["About", "Services", "Contact"].map(link => <a key={link} href={`#${link.toLowerCase()}`} className="font-brand-body text-brand-white/70 hover:text-brand-mid-blue transition-colors duration-300 text-xs sm:text-sm">
-                  {link}
+              {[
+                { name: "About", href: "#about" },
+                { name: "Services", href: "#services" },
+                { name: "Why Choose Us", href: "#why-choose-us" },
+                { name: "How We Work", href: "#how-we-work" },
+                { name: "Contact", href: "#contact" }
+              ].map(link => <a key={link.name} href={link.href} className="font-brand-body text-brand-white/70 hover:text-brand-mid-blue transition-colors duration-300 text-xs sm:text-sm">
+                  {link.name}
                 </a>)}
             </div>
           </div>
