@@ -40,8 +40,8 @@ const Services = () => {
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
             Our curated network of creative specialists delivers strategic branding and digital marketing solutions 
-            that create influence, not just attention. From brand design to social media campaigns, we're Kerala's 
-            premier creative agency serving businesses across Kozhikode and throughout India.
+            that create influence, not just attention. From brand design to social media campaigns, we deliver 
+            comprehensive creative solutions that drive real results.
           </p>
         </div>
         

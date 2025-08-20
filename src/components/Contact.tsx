@@ -85,9 +85,9 @@ const Contact = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            Ready to work with Kerala's best branding agency? Let's discuss your project and assemble the perfect 
-            team of creative specialists to bring your vision to life. Contact Ad Atelier today for strategic 
-            brand design and digital marketing solutions that drive real results.
+            Ready to work with us? Let's discuss your project and assemble the perfect team of creative 
+            specialists to bring your vision to life. Contact Ad Atelier today for strategic brand design 
+            and digital marketing solutions that drive real results.
           </p>
         </div>
         
