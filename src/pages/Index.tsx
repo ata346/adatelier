@@ -7,10 +7,13 @@ import HowWeWork from "@/components/HowWeWork";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
+import SEOHead from "@/components/SEOHead";
 
 const Index = () => {
   return (
-    <div className="min-h-screen" itemScope itemType="https://schema.org/WebPage">
+    <>
+      <SEOHead />
+      <div className="min-h-screen" itemScope itemType="https://schema.org/WebPage">
       {/* Skip to main content for accessibility */}
       <a 
         href="#main-content" 
@@ -57,6 +60,7 @@ const Index = () => {
       <Footer />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

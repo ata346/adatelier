@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 const AdAtelierStudio = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
+    phone: '',
+    budget: '',
+    services: [] as string[]
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -18,8 +22,28 @@ const AdAtelierStudio = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    
+    if (!formData.name || !formData.message) {
+      console.log('Form validation failed: Missing required fields');
+      return;
+    }
+
+    // Format message for email
+    const servicesText = formData.services.length > 0 ? formData.services.join(', ') : 'Not specified';
+    const budgetText = formData.budget || 'Not specified';
+    const message = `New Contact Form Submission\n\nName: ${formData.name}\nPhone: ${formData.phone || 'Not provided'}\nServices: ${servicesText}\nBudget: ${budgetText}\nMessage: ${formData.message}`;
+    
+    // Redirect to WhatsApp with pre-filled message
+    const whatsappMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/919656778508?text=${whatsappMessage}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    
+    // Reset form
+    setFormData({ name: "", email: "", message: "", phone: "", budget: "", services: [] });
+    
+    console.log('Form submitted successfully via WhatsApp');
   };
 
   const scrollToContact = () => {
@@ -27,61 +51,72 @@ const AdAtelierStudio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background font-brand-body">
-      {/* Navigation Header */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-14 sm:h-16">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => window.location.href = '/'}
-              className="flex items-center gap-2 text-foreground hover:text-primary"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Main Site
-            </Button>
-            
-            <div className="font-brand-heading text-lg xs:text-xl sm:text-2xl text-foreground">
-              Ad Atelier Studio
+    <>
+      <SEOHead 
+        title="Ad Atelier Studio - Professional Video Production Services"
+        description="Professional mobile video production and editing services in Kozhikode, Kerala. Cinematic quality video shooting and post-production for businesses and personal projects."
+        keywords="video production kerala, mobile video shooting kozhikode, video editing services, cinematic videography, professional video production ulliyeri, corporate videos kerala, event videography kozhikode"
+        canonical="https://ad-atelier.com/ad-atelier-studio"
+        type="website"
+      />
+      <div className="min-h-screen bg-background font-brand-body">
+        {/* Navigation Header */}
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border" role="navigation" aria-label="Ad Atelier Studio Navigation">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-14 sm:h-16">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => window.location.href = '/'}
+                className="flex items-center gap-2 text-foreground hover:text-primary touch-manipulation tap-highlight-transparent"
+                aria-label="Return to main Ad Atelier website"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Back to Main Site
+              </Button>
+              
+              <div className="font-brand-heading text-lg xs:text-xl sm:text-2xl text-foreground">
+                Ad Atelier Studio
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-      {/* Hero Section */}
-      <section className="min-h-screen bg-brand-dark-navy flex items-center justify-center px-4 pt-16">
-        <div className="text-center animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-brand-heading text-brand-white uppercase tracking-wide mb-6">
-            Ad Atelier Studio
-          </h1>
-          <p className="text-xl md:text-2xl text-brand-white italic mb-12 font-light">
-            "Capturing life's best moments in just one snap!"
-          </p>
-          <Button
-            onClick={scrollToContact}
-            variant="outline"
-            size="lg"
-            className="bg-brand-white text-brand-dark-navy border-brand-white hover:bg-brand-dark-navy hover:text-brand-white uppercase tracking-wider"
-          >
-            Get in Touch
-          </Button>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="py-20 px-4 bg-background">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="animate-fade-in">
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed font-medium">
-              We are a professional video production studio dedicated to capturing unforgettable moments 
-              with cinematic precision. Our passion lies in transforming your vision into compelling visual 
-              stories that resonate with authenticity and creativity. Every frame we capture tells a story 
-              worth remembering.
+        {/* Hero Section */}
+        <section className="min-h-screen bg-brand-dark-navy flex items-center justify-center px-4 pt-16" role="banner" aria-labelledby="studio-hero-heading">
+          <div className="text-center animate-fade-in">
+            <h1 id="studio-hero-heading" className="text-6xl md:text-8xl font-brand-heading text-brand-white uppercase tracking-wide mb-6">
+              Ad Atelier Studio
+            </h1>
+            <p className="text-xl md:text-2xl text-brand-white italic mb-12 font-light">
+              "Capturing life's best moments in just one snap!"
             </p>
+            <Button
+              onClick={scrollToContact}
+              variant="outline"
+              size="lg"
+              className="bg-brand-white text-brand-dark-navy border-brand-white hover:bg-brand-dark-navy hover:text-brand-white uppercase tracking-wider touch-manipulation tap-highlight-transparent"
+              aria-label="Contact Ad Atelier Studio for video production services"
+            >
+              Get in Touch
+            </Button>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* About Section */}
+        <section className="py-20 px-4 bg-background" aria-labelledby="studio-about-heading">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="animate-fade-in">
+              <h2 id="studio-about-heading" className="sr-only">About Ad Atelier Studio</h2>
+              <p className="text-xl md:text-2xl text-foreground leading-relaxed font-medium">
+                We are a professional video production studio dedicated to capturing unforgettable moments 
+                with cinematic precision. Our passion lies in transforming your vision into compelling visual 
+                stories that resonate with authenticity and creativity. Every frame we capture tells a story 
+                worth remembering.
+              </p>
+            </div>
+          </div>
+        </section>
 
       {/* Services Section */}
       <section className="py-20 px-4 bg-muted/30">
@@ -162,6 +197,7 @@ const AdAtelierStudio = () => {
                 onChange={handleInputChange}
                 required
                 className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg"
+                aria-label="Your full name"
               />
             </div>
             <div>
@@ -173,6 +209,18 @@ const AdAtelierStudio = () => {
                 onChange={handleInputChange}
                 required
                 className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg"
+                aria-label="Your email address"
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone (Optional)"
+                value={formData.phone}
+                onChange={handleInputChange}
+                className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg"
+                aria-label="Your phone number"
               />
             </div>
             <div>
@@ -209,6 +257,7 @@ const AdAtelierStudio = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 

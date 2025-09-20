@@ -61,7 +61,7 @@ const About = () => {
         
         {/* Freelancer CTA */}
         <aside className="max-w-2xl mx-auto text-center mt-10 sm:mt-12 md:mt-16 px-2 sm:px-4">
-          <div className="bg-gradient-to-br from-brand-white to-brand-light-blue/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant border border-brand-mid-blue/10">
+          <div className="bg-gradient-to-br from-brand-white to-brand-light-gray/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant border border-brand-mid-blue/10">
             <a
               href="https://forms.gle/hU9EcCz7a4eBMXkKA"
               target="_blank"
