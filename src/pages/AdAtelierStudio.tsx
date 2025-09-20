@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Button } from '@/components/ui/button';
 
 const AdAtelierStudio = () => {
   const [formData, setFormData] = useState({
@@ -25,30 +26,32 @@ const AdAtelierStudio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-montserrat">
+    <div className="min-h-screen bg-background font-brand-body">
       {/* Hero Section */}
-      <section className="min-h-screen bg-black flex items-center justify-center px-4">
+      <section className="min-h-screen bg-brand-dark-navy flex items-center justify-center px-4">
         <div className="text-center animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold text-white uppercase tracking-wide mb-6">
+          <h1 className="text-6xl md:text-8xl font-brand-heading text-brand-white uppercase tracking-wide mb-6">
             Ad Atelier Studio
           </h1>
-          <p className="text-xl md:text-2xl text-white italic mb-12 font-light">
+          <p className="text-xl md:text-2xl text-brand-white italic mb-12 font-light">
             "Capturing life's best moments in just one snap!"
           </p>
-          <button
+          <Button
             onClick={scrollToContact}
-            className="bg-white text-black px-8 py-4 text-lg font-semibold rounded-lg hover:bg-black hover:text-white border-2 border-white transition-all duration-300 uppercase tracking-wider"
+            variant="outline"
+            size="lg"
+            className="bg-brand-white text-brand-dark-navy border-brand-white hover:bg-brand-dark-navy hover:text-brand-white uppercase tracking-wider"
           >
             Get in Touch
-          </button>
+          </Button>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-background">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
-            <p className="text-xl md:text-2xl text-black leading-relaxed font-medium">
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed font-medium">
               We are a professional video production studio dedicated to capturing unforgettable moments 
               with cinematic precision. Our passion lies in transforming your vision into compelling visual 
               stories that resonate with authenticity and creativity. Every frame we capture tells a story 
@@ -59,14 +62,14 @@ const AdAtelierStudio = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-black text-center mb-16 uppercase tracking-wide">
+          <h2 className="text-4xl md:text-5xl font-brand-heading text-foreground text-center mb-16 uppercase tracking-wide">
             Our Services
           </h2>
           <div className="flex justify-center">
-            <div className="bg-black text-white p-12 rounded-lg hover:scale-105 transition-transform duration-300 max-w-md animate-fade-in">
-              <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider">
+            <div className="bg-brand-dark-navy text-brand-white p-12 rounded-lg hover:scale-105 transition-transform duration-300 max-w-md animate-fade-in">
+              <h3 className="text-2xl font-brand-heading mb-4 uppercase tracking-wider">
                 Mobile Video Shooting & Editing
               </h3>
               <p className="text-lg leading-relaxed">
@@ -80,20 +83,20 @@ const AdAtelierStudio = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-black text-center mb-16 uppercase tracking-wide">
+          <h2 className="text-4xl md:text-5xl font-brand-heading text-foreground text-center mb-16 uppercase tracking-wide">
             Portfolio
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[1, 2, 3, 4].map((item) => (
               <div
                 key={item}
-                className="aspect-video bg-gray-900 rounded-lg hover:scale-105 hover:opacity-80 transition-all duration-300 flex items-center justify-center cursor-pointer animate-fade-in"
+                className="aspect-video bg-brand-dark-navy rounded-lg hover:scale-105 hover:opacity-80 transition-all duration-300 flex items-center justify-center cursor-pointer animate-fade-in"
                 style={{ animationDelay: `${item * 0.2}s` }}
               >
-                <div className="text-white text-center">
-                  <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-2">
+                <div className="text-brand-white text-center">
+                  <div className="w-16 h-16 bg-brand-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
                     <svg
                       className="w-8 h-8"
                       fill="currentColor"
@@ -111,17 +114,17 @@ const AdAtelierStudio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-black">
+      <section id="contact" className="py-20 px-4 bg-brand-dark-navy">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16 uppercase tracking-wide">
+          <h2 className="text-4xl md:text-5xl font-brand-heading text-brand-white text-center mb-16 uppercase tracking-wide">
             Let's Work Together
           </h2>
           
           <div className="text-center mb-12">
-            <p className="text-white text-lg mb-4">Ready to create something amazing?</p>
+            <p className="text-brand-white text-lg mb-4">Ready to create something amazing?</p>
             <a
               href="mailto:communityfirefox87@gmail.com"
-              className="text-white text-xl font-semibold hover:underline"
+              className="text-brand-white text-xl font-semibold hover:underline"
             >
               communityfirefox87@gmail.com
             </a>
@@ -136,7 +139,7 @@ const AdAtelierStudio = () => {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
-                className="w-full px-6 py-4 bg-white text-black rounded-lg border-2 border-transparent focus:border-gray-300 focus:outline-none text-lg"
+                className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg"
               />
             </div>
             <div>
@@ -147,7 +150,7 @@ const AdAtelierStudio = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="w-full px-6 py-4 bg-white text-black rounded-lg border-2 border-transparent focus:border-gray-300 focus:outline-none text-lg"
+                className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg"
               />
             </div>
             <div>
@@ -158,25 +161,27 @@ const AdAtelierStudio = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 required
-                className="w-full px-6 py-4 bg-white text-black rounded-lg border-2 border-transparent focus:border-gray-300 focus:outline-none text-lg resize-none"
+                className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg resize-none"
               />
             </div>
             <div className="text-center">
-              <button
+              <Button
                 type="submit"
-                className="bg-white text-black px-12 py-4 text-lg font-semibold rounded-lg hover:bg-transparent hover:text-white border-2 border-white transition-all duration-300 uppercase tracking-wider"
+                variant="outline"
+                size="lg"
+                className="bg-brand-white text-brand-dark-navy border-brand-white hover:bg-transparent hover:text-brand-white uppercase tracking-wider"
               >
                 Submit
-              </button>
+              </Button>
             </div>
           </form>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 bg-white">
+      <footer className="py-8 px-4 bg-background">
         <div className="text-center">
-          <p className="text-black text-lg font-medium">
+          <p className="text-foreground text-lg font-medium">
             Copyright © Ad Atelier Studio 2025
           </p>
         </div>

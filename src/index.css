@@ -279,23 +279,25 @@ All colors MUST be HSL.
       padding: 16px !important;
     }
   }
-  @layer utilities {
-    .touch-manipulation {
-      touch-action: manipulation;
-    }
-    
-    .tap-highlight-transparent {
-      -webkit-tap-highlight-color: transparent;
-    }
-    
-    .safe-area-inset-top {
-      padding-top: env(safe-area-inset-top);
-    }
-    
-    .safe-area-inset-bottom {
-      padding-bottom: env(safe-area-inset-bottom);
-    }
+}
+
+@layer utilities {
+  .touch-manipulation {
+    touch-action: manipulation;
   }
+  
+  .tap-highlight-transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .safe-area-inset-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  .safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
 
   /* Mobile-first responsive utilities */
   @media (max-width: 479px) {
@@ -383,4 +385,3 @@ All colors MUST be HSL.
     outline: 2px solid hsl(var(--brand-mid-blue));
     outline-offset: 2px;
   }
-}
