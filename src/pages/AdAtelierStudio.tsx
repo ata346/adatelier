@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { ArrowLeft } from 'lucide-react';
 
 const AdAtelierStudio = () => {
   const [formData, setFormData] = useState({
@@ -27,8 +28,29 @@ const AdAtelierStudio = () => {
 
   return (
     <div className="min-h-screen bg-background font-brand-body">
+      {/* Navigation Header */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-14 sm:h-16">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => window.location.href = '/'}
+              className="flex items-center gap-2 text-foreground hover:text-primary"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Main Site
+            </Button>
+            
+            <div className="font-brand-heading text-lg xs:text-xl sm:text-2xl text-foreground">
+              Ad Atelier Studio
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="min-h-screen bg-brand-dark-navy flex items-center justify-center px-4">
+      <section className="min-h-screen bg-brand-dark-navy flex items-center justify-center px-4 pt-16">
         <div className="text-center animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-brand-heading text-brand-white uppercase tracking-wide mb-6">
             Ad Atelier Studio
