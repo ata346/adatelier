@@ -56,7 +56,7 @@ const AdAtelierStudio = () => {
         title="Ad Atelier Studio - Professional Video Production Services"
         description="Professional mobile video production and editing services in Kozhikode, Kerala. Cinematic quality video shooting and post-production for businesses and personal projects."
         keywords="video production kerala, mobile video shooting kozhikode, video editing services, cinematic videography, professional video production ulliyeri, corporate videos kerala, event videography kozhikode"
-        canonical="https://ad-atelier.com/ad-atelier-studio"
+        canonical="https://ad-atelier.com/adatelierstudio"
         type="website"
       />
       <div className="min-h-screen bg-background font-brand-body">

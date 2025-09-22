@@ -26,7 +26,7 @@ const App = () => (
         }>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/ad-atelier-studio" element={<AdAtelierStudio />} />
+            <Route path="/adatelierstudio" element={<AdAtelierStudio />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

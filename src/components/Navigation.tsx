@@ -22,7 +22,7 @@ const Navigation = () => {
     { name: "Why Choose Us", href: "#why-choose-us" },
     { name: "How We Work", href: "#how-we-work" },
     { name: "Contact", href: "#contact" },
-    { name: "Video Studio", href: "/ad-atelier-studio", isExternal: true },
+    { name: "Video Studio", href: "/adatelierstudio", isExternal: true },
   ];
 
   const scrollToSection = (href: string, isExternal?: boolean) => {
