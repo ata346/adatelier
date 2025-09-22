@@ -63,19 +63,20 @@ const AdAtelierStudio = () => {
         {/* Navigation Header */}
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border" role="navigation" aria-label="Ad Atelier Studio Navigation">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-14 sm:h-16">
+            <div className="flex justify-between items-center h-16 sm:h-18">
               <Button
                 variant="ghost"
                 size="sm"
                 onClick={() => window.location.href = '/'}
-                className="flex items-center gap-2 text-foreground hover:text-primary touch-manipulation tap-highlight-transparent"
+                className="flex items-center gap-2 text-foreground hover:text-primary touch-manipulation tap-highlight-transparent min-h-[44px] min-w-[44px] px-3 sm:px-4"
                 aria-label="Return to main Ad Atelier website"
               >
-                <ArrowLeft className="w-4 h-4" />
-                Back to Main Site
+                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="hidden xs:inline text-sm sm:text-base">Back to Main Site</span>
+                <span className="xs:hidden text-sm">Back</span>
               </Button>
               
-              <div className="font-brand-heading text-lg xs:text-xl sm:text-2xl text-foreground">
+              <div className="font-brand-heading text-base xs:text-lg sm:text-xl md:text-2xl text-foreground text-center flex-1 px-2">
                 Ad Atelier Studio
               </div>
             </div>
@@ -83,19 +84,19 @@ const AdAtelierStudio = () => {
         </nav>
 
         {/* Hero Section */}
-        <section className="min-h-screen bg-brand-dark-navy flex items-center justify-center px-4 pt-16" role="banner" aria-labelledby="studio-hero-heading">
-          <div className="text-center animate-fade-in">
-            <h1 id="studio-hero-heading" className="text-6xl md:text-8xl font-brand-heading text-brand-white uppercase tracking-wide mb-6">
+        <section className="min-h-screen bg-brand-dark-navy flex items-center justify-center px-4 pt-20 sm:pt-16" role="banner" aria-labelledby="studio-hero-heading">
+          <div className="text-center animate-fade-in max-w-4xl mx-auto">
+            <h1 id="studio-hero-heading" className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-brand-heading text-brand-white uppercase tracking-wide mb-4 sm:mb-6 leading-tight px-2">
               Ad Atelier Studio
             </h1>
-            <p className="text-xl md:text-2xl text-brand-white italic mb-12 font-light">
+            <p className="text-base xs:text-lg sm:text-xl md:text-2xl text-brand-white italic mb-8 sm:mb-10 md:mb-12 font-light leading-relaxed px-2">
               "Capturing life's best moments in just one snap!"
             </p>
             <Button
               onClick={scrollToContact}
               variant="outline"
               size="lg"
-              className="bg-brand-white text-brand-dark-navy border-brand-white hover:bg-brand-dark-navy hover:text-brand-white uppercase tracking-wider touch-manipulation tap-highlight-transparent"
+              className="bg-brand-white text-brand-dark-navy border-brand-white hover:bg-brand-dark-navy hover:text-brand-white uppercase tracking-wider touch-manipulation tap-highlight-transparent min-h-[48px] px-6 sm:px-8 text-sm sm:text-base"
               aria-label="Contact Ad Atelier Studio for video production services"
             >
               Get in Touch
@@ -119,17 +120,17 @@ const AdAtelierStudio = () => {
         </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-brand-heading text-foreground text-center mb-16 uppercase tracking-wide">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-brand-heading text-foreground text-center mb-8 sm:mb-12 md:mb-16 uppercase tracking-wide px-2 leading-tight">
             Our Services
           </h2>
           <div className="flex justify-center">
-            <div className="bg-brand-dark-navy text-brand-white p-12 rounded-lg hover:scale-105 transition-transform duration-300 max-w-md animate-fade-in">
-              <h3 className="text-2xl font-brand-heading mb-4 uppercase tracking-wider">
+            <div className="bg-brand-dark-navy text-brand-white p-6 sm:p-8 md:p-12 rounded-lg hover:scale-105 transition-transform duration-300 max-w-md w-full animate-fade-in">
+              <h3 className="text-lg xs:text-xl sm:text-2xl font-brand-heading mb-3 sm:mb-4 uppercase tracking-wider leading-tight">
                 Mobile Video Shooting & Editing
               </h3>
-              <p className="text-lg leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed">
                 Professional mobile video production services that deliver cinematic quality. 
                 From concept to final edit, we create compelling visual content that captures 
                 your story with precision and artistry.
@@ -140,29 +141,29 @@ const AdAtelierStudio = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 px-4 bg-background">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-brand-heading text-foreground text-center mb-16 uppercase tracking-wide">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-brand-heading text-foreground text-center mb-8 sm:mb-12 md:mb-16 uppercase tracking-wide px-2 leading-tight">
             Portfolio
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[1, 2, 3, 4].map((item) => (
               <div
                 key={item}
-                className="aspect-video bg-brand-dark-navy rounded-lg hover:scale-105 hover:opacity-80 transition-all duration-300 flex items-center justify-center cursor-pointer animate-fade-in"
+                className="aspect-video bg-brand-dark-navy rounded-lg hover:scale-105 hover:opacity-80 transition-all duration-300 flex items-center justify-center cursor-pointer animate-fade-in touch-manipulation tap-highlight-transparent"
                 style={{ animationDelay: `${item * 0.2}s` }}
               >
-                <div className="text-brand-white text-center">
-                  <div className="w-16 h-16 bg-brand-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                <div className="text-brand-white text-center p-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-brand-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
                     <svg
-                      className="w-8 h-8"
+                      className="w-6 h-6 sm:w-8 sm:h-8"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
                       <path d="M10 12l-6-4h12l-6 4z" />
                     </svg>
                   </div>
-                  <p className="text-sm font-medium">Video {item}</p>
+                  <p className="text-xs sm:text-sm font-medium">Video {item}</p>
                 </div>
               </div>
             ))}
@@ -171,23 +172,23 @@ const AdAtelierStudio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-brand-dark-navy">
+      <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 bg-brand-dark-navy">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-brand-heading text-brand-white text-center mb-16 uppercase tracking-wide">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-brand-heading text-brand-white text-center mb-8 sm:mb-12 md:mb-16 uppercase tracking-wide px-2 leading-tight">
             Let's Work Together
           </h2>
           
-          <div className="text-center mb-12">
-            <p className="text-brand-white text-lg mb-4">Ready to create something amazing?</p>
+          <div className="text-center mb-8 sm:mb-10 md:mb-12 px-2">
+            <p className="text-brand-white text-base sm:text-lg mb-3 sm:mb-4">Ready to create something amazing?</p>
             <a
               href="mailto:communityfirefox87@gmail.com"
-              className="text-brand-white text-xl font-semibold hover:underline"
+              className="text-brand-white text-lg sm:text-xl font-semibold hover:underline break-all"
             >
               communityfirefox87@gmail.com
             </a>
           </div>
 
-          <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
+          <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-4 sm:space-y-6">
             <div>
               <input
                 type="text"
@@ -196,7 +197,7 @@ const AdAtelierStudio = () => {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
-                className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg"
+                className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-base sm:text-lg min-h-[48px]"
                 aria-label="Your full name"
               />
             </div>
@@ -208,7 +209,7 @@ const AdAtelierStudio = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg"
+                className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-base sm:text-lg min-h-[48px]"
                 aria-label="Your email address"
               />
             </div>
@@ -219,7 +220,7 @@ const AdAtelierStudio = () => {
                 placeholder="Your Phone (Optional)"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg"
+                className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-base sm:text-lg min-h-[48px]"
                 aria-label="Your phone number"
               />
             </div>
@@ -231,7 +232,7 @@ const AdAtelierStudio = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 required
-                className="w-full px-6 py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-lg resize-none"
+                className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-brand-white text-brand-dark-navy rounded-lg border-2 border-transparent focus:border-muted focus:outline-none text-base sm:text-lg resize-none min-h-[100px] sm:min-h-[120px]"
               />
             </div>
             <div className="text-center">
@@ -239,7 +240,7 @@ const AdAtelierStudio = () => {
                 type="submit"
                 variant="outline"
                 size="lg"
-                className="bg-brand-white text-brand-dark-navy border-brand-white hover:bg-transparent hover:text-brand-white uppercase tracking-wider"
+                className="bg-brand-white text-brand-dark-navy border-brand-white hover:bg-transparent hover:text-brand-white uppercase tracking-wider min-h-[48px] px-6 sm:px-8 text-sm sm:text-base w-full sm:w-auto"
               >
                 Submit
               </Button>
