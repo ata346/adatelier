@@ -22,9 +22,9 @@ const WhyChooseUs = () => {
     },
     {
       icon: CheckCircle,
-      title: "No Overhead, More Value",
+      title: "Transparent 25% Commission",
       problem: "Paying premium agency rates for overhead costs that don't benefit your project?",
-      solution: "Our network model eliminates unnecessary costs, giving you more value and direct access to top talent."
+      solution: "Our clear 25% commission model eliminates hidden fees - you pay the freelancer's rate plus our 25% for project management, quality assurance, and delivery guarantee."
     }
   ];
 
@@ -37,7 +37,8 @@ const WhyChooseUs = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            We understand the challenges businesses face with traditional agencies. Here's how we solve them differently.
+            We understand the challenges businesses face with traditional agencies. Here's how we solve them differently 
+            with our <strong className="text-brand-deep-blue">transparent 25% commission structure</strong>.
           </p>
         </div>
         

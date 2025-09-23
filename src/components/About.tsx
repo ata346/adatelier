@@ -53,7 +53,8 @@ const About = () => {
               >
                 Frustrated with slow processes and bloated agency overhead? Our streamlined network delivers the 
                 reliability of an established agency with the agility and cost-effectiveness of working directly 
-                with top-tier specialists. You get faster results, better value, and direct access to expertise.
+                with top-tier specialists. <strong className="text-brand-deep-blue">With our transparent 25% commission 
+                structure, you get faster results, better value, and direct access to expertise</strong> without hidden fees or inflated costs.
               </p>
             </div>
           </div>
@@ -62,6 +63,13 @@ const About = () => {
         {/* Freelancer CTA */}
         <aside className="max-w-2xl mx-auto text-center mt-10 sm:mt-12 md:mt-16 px-2 sm:px-4">
           <div className="bg-gradient-to-br from-brand-white to-brand-light-gray/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant border border-brand-mid-blue/10">
+            <div className="mb-4 sm:mb-6">
+              <div className="bg-brand-deep-blue/10 rounded-lg p-3 sm:p-4 border border-brand-deep-blue/20 mb-4">
+                <p className="font-brand-body text-xs sm:text-sm md:text-base text-brand-deep-blue font-semibold">
+                  <strong>For Freelancers:</strong> Join our network and keep 75% of your project earnings - we take only 25% commission for client acquisition, project management, and quality assurance.
+                </p>
+              </div>
+            </div>
             <a
               href="https://forms.gle/hU9EcCz7a4eBMXkKA"
               target="_blank"

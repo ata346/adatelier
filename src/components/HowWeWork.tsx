@@ -37,8 +37,9 @@ const HowWeWork = () => {
         <div className="max-w-4xl mx-auto text-center mb-10 sm:mb-12 md:mb-16 px-2 sm:px-4">
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
             We don't just create—we design influence. Operating through a network of highly skilled freelance 
-            creatives, we assemble the right team for every project. No full-time employees, no unnecessary 
-            overhead—just the creative expertise your brand requires from the best professionals.
+            creatives, we assemble the right team for every project. <strong className="text-brand-deep-blue">Our transparent 
+            25% commission model ensures quality delivery while keeping costs competitive</strong>—no full-time employees, 
+            no unnecessary overhead—just the creative expertise your brand requires from the best professionals.
           </p>
         </div>
 
@@ -71,9 +72,15 @@ const HowWeWork = () => {
 
         <div className="max-w-3xl mx-auto text-center px-2 sm:px-4">
           <div className="bg-gradient-to-br from-brand-white to-brand-light-gray/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant border border-brand-mid-blue/10">
-            <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed font-medium">
-              We combines the flexibility of a freelance network with the reliability of an agency.
+            <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed font-medium mb-4">
+              We combine the flexibility of a freelance network with the reliability of an agency.
             </p>
+            <div className="bg-brand-deep-blue/10 rounded-lg p-4 border-l-4 border-brand-deep-blue">
+              <p className="font-brand-body text-sm sm:text-base text-brand-deep-blue font-semibold">
+                <strong>Transparent Pricing:</strong> We operate on a simple 25% commission model - you pay the freelancer's 
+                rate plus our 25% project management fee for quality assurance, coordination, and delivery guarantee.
+              </p>
+            </div>
           </div>
         </div>
       </div>

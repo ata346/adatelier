@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Pricing from "@/components/Pricing";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import HowWeWork from "@/components/HowWeWork";
 import Contact from "@/components/Contact";
@@ -65,6 +66,11 @@ const Index = () => {
         {/* Services Section */}
         <section id="services" aria-labelledby="services-heading">
           <Services />
+        </section>
+        
+        {/* Pricing Section */}
+        <section id="pricing" aria-labelledby="pricing-heading">
+          <Pricing />
         </section>
         
         {/* Why Choose Us Section */}
