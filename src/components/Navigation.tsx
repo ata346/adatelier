@@ -22,13 +22,10 @@ const Navigation = () => {
     { name: "Why Choose Us", href: "#why-choose-us" },
     { name: "How We Work", href: "#how-we-work" },
     { name: "Contact", href: "#contact" },
-    { name: "Video Studio", href: "/adatelierstudio", isExternal: true },
   ];
 
-  const scrollToSection = (href: string, isExternal?: boolean) => {
-    if (isExternal) {
-      window.location.href = href;
-    } else if (href === "#home") {
+  const scrollToSection = (href: string) => {
+    if (href === "#home") {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
@@ -55,7 +52,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href, item.isExternal)}
+                onClick={() => scrollToSection(item.href)}
                 className="font-brand-body text-sm xl:text-base text-brand-dark-navy hover:text-brand-deep-blue transition-colors duration-300 relative group whitespace-nowrap"
               >
                 {item.name}
@@ -93,7 +90,7 @@ const Navigation = () => {
                 {navItems.map((item) => (
                   <button
                     key={item.name}
-                    onClick={() => scrollToSection(item.href, item.isExternal)}
+                    onClick={() => scrollToSection(item.href)}
                     className="block w-full text-left px-4 py-3 font-brand-body text-sm text-brand-dark-navy hover:text-brand-deep-blue hover:bg-brand-light-gray/30 transition-colors duration-300 touch-manipulation tap-highlight-transparent min-h-[44px] flex items-center"
                   >
                     {item.name}
