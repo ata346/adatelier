@@ -11,9 +11,11 @@ All colors MUST be HSL.
     /* Ad Atelier Brand Colors */
     --brand-deep-blue: 217 100% 43%;
     --brand-mid-blue: 208 100% 50%;
+    --brand-electric-blue: 208 100% 55%;
     --brand-dark-navy: 0 0% 4%;
     --brand-light-gray: 0 0% 88%;
     --brand-white: 0 0% 100%;
+    --brand-accent: 208 100% 55%;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--brand-deep-blue)), hsl(var(--brand-mid-blue)));
