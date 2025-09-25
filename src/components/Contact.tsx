@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import luvaLogo from "@/assets/luva-logo.png";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -127,6 +128,32 @@ const Contact = () => {
                 <div className="min-w-0">
                   <h4 className="font-brand-heading text-base sm:text-lg text-brand-dark-navy">Location</h4>
                   <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70">Ulliyeri, Kozhikode, India</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Luva Community */}
+            <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-brand-deep-blue/5 rounded-xl border border-brand-deep-blue/10">
+              <div className="text-center">
+                <h4 className="font-brand-heading text-base sm:text-lg text-brand-dark-navy mb-3">
+                  Join Our Free Community
+                </h4>
+                <div className="flex flex-col items-center space-y-3">
+                  <img 
+                    src={luvaLogo} 
+                    alt="Luva Community Logo" 
+                    className="w-24 sm:w-32 h-auto"
+                  />
+                  <p className="font-brand-body text-xs sm:text-sm text-brand-dark-navy/70 max-w-xs">
+                    Connect with fellow creators, share insights, and stay updated with the latest trends
+                  </p>
+                  <Button
+                    onClick={() => window.open('https://chat.whatsapp.com/BWizaIVwmsnAPAOVRENGsT', '_blank')}
+                    variant="outline"
+                    className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white border-[#25D366] hover:border-[#128C7E] transition-all duration-300"
+                  >
+                    Join Luva Community
+                  </Button>
                 </div>
               </div>
             </div>
