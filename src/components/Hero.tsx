@@ -45,7 +45,7 @@ const Hero = () => {
             className="sr-only"
             itemProp="description"
           >
-            Leading branding agency in Kozhikode, Kerala specializing in strategic brand design, digital marketing campaigns, and creative solutions through expert freelance network serving businesses across India
+            Creative branding studio transforming businesses through strategic design, innovative campaigns, and expert freelance collaboration across Kerala and India
           </div>
           
           <Button 
@@ -72,7 +72,7 @@ const Hero = () => {
           "@type": "Organization",
           "name": "Ad Atelier",
           "slogan": "Designing Influence - Not Just Attention",
-          "description": "Leading branding agency in Kozhikode, Kerala specializing in strategic brand design, digital marketing campaigns, and creative solutions through expert freelance network",
+          "description": "Creative branding studio in Kozhikode transforming businesses through strategic design, innovative campaigns, and expert freelance collaboration",
           "url": "https://ad-atelier.com",
           "logo": "/lovable-uploads/d7b2780c-4663-4385-a815-82bb418fb3f8.png",
           "address": {

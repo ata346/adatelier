@@ -93,7 +93,7 @@ const About = () => {
             "mainEntity": {
               "@type": "Organization",
               "name": "Ad Atelier",
-              "description": "Leading branding agency solving mismatched expertise problems through network-based approach, delivering influence-driven results with streamlined processes",
+              "description": "Innovative branding agency transforming business identity through collaborative creative partnerships and strategic marketing solutions",
               "knowsAbout": [
                 "Strategic Branding",
                 "Digital Marketing",

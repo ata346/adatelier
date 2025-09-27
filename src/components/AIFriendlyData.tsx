@@ -31,7 +31,7 @@ const AIFriendlyData = () => {
       "@id": "https://ad-atelier.com/#professional-service",
       "name": "Ad Atelier - Professional Branding & Marketing Agency",
       "alternateName": ["Ad Atelier Agency", "Ad Atelier Branding", "Ad Atelier Kerala"],
-      "description": "Premier branding and digital marketing agency in Kozhikode, Kerala offering strategic brand design, digital campaigns, social media marketing, and creative solutions through curated freelance network serving businesses across India and globally",
+      "description": "Innovative branding and marketing agency connecting businesses with specialized creative professionals through our curated freelance network, delivering impactful solutions across Kerala and India",
       "url": "https://ad-atelier.com",
       "logo": {
         "@type": "ImageObject",

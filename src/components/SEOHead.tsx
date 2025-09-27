@@ -11,7 +11,7 @@ interface SEOHeadProps {
 
 const SEOHead = ({ 
   title = "Best Branding Agency Near Me | Ad Atelier Kozhikode - Strategic Brand Design & Digital Marketing",
-  description = "Top branding agency in Kozhikode, Kerala specializing in strategic brand design, digital marketing campaigns, and social media branding. Expert freelance network delivering influence-driven results for businesses across India.",
+  description = "Award-winning creative studio in Kozhikode specializing in brand transformation and marketing excellence. Our expert network delivers custom solutions for businesses seeking authentic brand influence and measurable growth.",
   keywords = "best branding agency near me, branding agency kozhikode, digital marketing kerala, brand design agency, social media marketing kozhikode, creative agency kerala, advertising agency ulliyeri, brand strategy consultants, logo design kozhikode, marketing agency kerala, freelance creative network, influence marketing agency",
   canonical = "https://ad-atelier.com/",
   type = "website",
