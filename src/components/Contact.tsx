@@ -150,7 +150,7 @@ const Contact = () => {
                   <Button
                     onClick={() => window.open('https://chat.whatsapp.com/BWizaIVwmsnAPAOVRENGsT', '_blank')}
                     variant="outline"
-                    className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white border-[#25D366] hover:border-[#128C7E] transition-all duration-300"
+                    className="w-full sm:w-auto bg-brand-deep-blue hover:bg-brand-mid-blue text-brand-white border-brand-deep-blue hover:border-brand-mid-blue transition-all duration-300"
                   >
                     Join Luva Community
                   </Button>
