@@ -18,7 +18,7 @@ const WhatsAppWidget = () => {
       <div className="fixed bottom-4 sm:bottom-5 right-4 sm:right-5 z-[1000]">
         <button
           onClick={togglePopup}
-          className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+          className="w-14 h-14 sm:w-16 sm:h-16 bg-brand-deep-blue hover:bg-brand-mid-blue rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           aria-label="Open WhatsApp chat"
         >
           <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
