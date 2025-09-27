@@ -11,7 +11,7 @@ const Services = () => {
     {
       icon: Palette,
       title: "Strategic Branding",
-      description: "Complete brand identity that influences perception and drives action. We create memorable identities that don't just look good—they work strategically to position your brand for influence."
+      description: "Complete brand identity that influences perception and drives action. We create memorable identities that don't just look good - they work strategically to position your brand for influence."
     },
     {
       icon: Megaphone,

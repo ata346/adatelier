@@ -10,7 +10,7 @@ const HowWeWork = () => {
     {
       icon: Users,
       title: "We Assemble",
-      description: "From our curated network of freelancers, we select the specialists best suited for your project—designers, strategists, and storytellers ensuring the right skills are applied at the right time."
+      description: "From our curated network of freelancers, we select the specialists best suited for your project - designers, strategists, and storytellers ensuring the right skills are applied at the right time."
     },
     {
       icon: Palette,
@@ -38,8 +38,8 @@ const HowWeWork = () => {
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
             We don't just create—we design influence. Operating through a network of highly skilled freelance 
             creatives, we assemble the right team for every project. <strong className="text-brand-deep-blue">Our transparent 
-            25% commission model ensures quality delivery while keeping costs competitive</strong>—no full-time employees, 
-            no unnecessary overhead—just the creative expertise your brand requires from the best professionals.
+            25% commission model ensures quality delivery while keeping costs competitive</strong> - no full-time employees, 
+            no unnecessary overhead - just the creative expertise your brand requires from the best professionals.
           </p>
         </div>
 

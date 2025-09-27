@@ -29,7 +29,7 @@ const About = () => {
               >
                 Struggling with agencies that promise the world but deliver generic solutions? At Ad Atelier, we solve 
                 the fundamental problem of mismatched expertise. Our network-based approach means you get the exact 
-                specialist your project needs—no junior staff, no learning curves on your dime.
+                specialist your project needs - no junior staff, no learning curves on your dime.
               </p>
             </div>
             
