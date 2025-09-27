@@ -19,69 +19,90 @@ const SEOHead = ({
 }: SEOHeadProps) => {
   
   useEffect(() => {
-    // Update document title
-    document.title = title;
-    
-    // Update meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', description);
+    try {
+      // Update document title
+      document.title = title;
+      
+      // Update meta description
+      let metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute('content', description);
+      } else {
+        // Create if doesn't exist
+        metaDescription = document.createElement('meta');
+        metaDescription.setAttribute('name', 'description');
+        metaDescription.setAttribute('content', description);
+        document.head.appendChild(metaDescription);
+      }
+      
+      // Update meta keywords
+      let metaKeywords = document.querySelector('meta[name="keywords"]');
+      if (metaKeywords) {
+        metaKeywords.setAttribute('content', keywords);
+      } else {
+        // Create if doesn't exist
+        metaKeywords = document.createElement('meta');
+        metaKeywords.setAttribute('name', 'keywords');
+        metaKeywords.setAttribute('content', keywords);
+        document.head.appendChild(metaKeywords);
+      }
+      
+      // Update canonical URL
+      let canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (canonicalLink) {
+        canonicalLink.setAttribute('href', canonical);
+      } else {
+        // Create if doesn't exist
+        canonicalLink = document.createElement('link');
+        canonicalLink.setAttribute('rel', 'canonical');
+        canonicalLink.setAttribute('href', canonical);
+        document.head.appendChild(canonicalLink);
+      }
+      
+      // Update Open Graph tags
+      const ogTags = [
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: description },
+        { property: 'og:type', content: type },
+        { property: 'og:url', content: canonical },
+        { property: 'og:image', content: image }
+      ];
+      
+      ogTags.forEach(({ property, content }) => {
+        let tag = document.querySelector(`meta[property="${property}"]`);
+        if (tag) {
+          tag.setAttribute('content', content);
+        } else {
+          tag = document.createElement('meta');
+          tag.setAttribute('property', property);
+          tag.setAttribute('content', content);
+          document.head.appendChild(tag);
+        }
+      });
+      
+      // Update Twitter Card tags
+      const twitterTags = [
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: image }
+      ];
+      
+      twitterTags.forEach(({ name, content }) => {
+        let tag = document.querySelector(`meta[name="${name}"]`);
+        if (tag) {
+          tag.setAttribute('content', content);
+        } else {
+          tag = document.createElement('meta');
+          tag.setAttribute('name', name);
+          tag.setAttribute('content', content);
+          document.head.appendChild(tag);
+        }
+      });
+      
+    } catch (error) {
+      console.error('Error updating SEO meta tags:', error);
     }
-    
-    // Update meta keywords
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute('content', keywords);
-    }
-    
-    // Update canonical URL
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (canonicalLink) {
-      canonicalLink.setAttribute('href', canonical);
-    }
-    
-    // Update Open Graph tags
-    let ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) {
-      ogTitle.setAttribute('content', title);
-    }
-    
-    let ogDescription = document.querySelector('meta[property="og:description"]');
-    if (ogDescription) {
-      ogDescription.setAttribute('content', description);
-    }
-    
-    let ogType = document.querySelector('meta[property="og:type"]');
-    if (ogType) {
-      ogType.setAttribute('content', type);
-    }
-    
-    let ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) {
-      ogUrl.setAttribute('content', canonical);
-    }
-    
-    let ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) {
-      ogImage.setAttribute('content', image);
-    }
-    
-    // Update Twitter Card tags
-    let twitterTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twitterTitle) {
-      twitterTitle.setAttribute('content', title);
-    }
-    
-    let twitterDescription = document.querySelector('meta[name="twitter:description"]');
-    if (twitterDescription) {
-      twitterDescription.setAttribute('content', description);
-    }
-    
-    let twitterImage = document.querySelector('meta[name="twitter:image"]');
-    if (twitterImage) {
-      twitterImage.setAttribute('content', image);
-    }
-    
   }, [title, description, keywords, canonical, type, image]);
 
   return null; // This component doesn't render anything

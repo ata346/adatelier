@@ -43,40 +43,60 @@ const LeadCapturePopup = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.name.trim() || !formData.phone.trim()) {
+    try {
+      if (!formData.name.trim() || !formData.phone.trim()) {
+        toast({
+          title: "Missing Information",
+          description: "Please fill in your name and phone number.",
+          variant: "destructive"
+        });
+        return;
+      }
+
+      // Validate phone number (basic validation)
+      const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+      if (!phoneRegex.test(formData.phone.trim())) {
+        toast({
+          title: "Invalid Phone Number",
+          description: "Please enter a valid phone number.",
+          variant: "destructive"
+        });
+        return;
+      }
+
+      let leadMessage = '🎯 *New Lead Captured!*\n\n';
+      leadMessage += `👤 *Name:* ${formData.name.trim()}\n`;
+      leadMessage += `📱 *Phone:* ${formData.phone.trim()}\n`;
+      
+      if (formData.address.trim()) {
+        leadMessage += `🏠 *Address:* ${formData.address.trim()}\n`;
+      }
+      
+      if (formData.message.trim()) {
+        leadMessage += `💬 *Message:* ${formData.message.trim()}\n`;
+      }
+      
+      leadMessage += `\n⏰ *Time:* ${new Date().toLocaleString()}`;
+      leadMessage += '\n\n_Generated via Luva Lead Capture_';
+      
+      const whatsappUrl = `https://wa.me/919656778508?text=${encodeURIComponent(leadMessage)}`;
+      window.open(whatsappUrl, '_blank');
+      
       toast({
-        title: "Missing Information",
-        description: "Please fill in your name and phone number.",
+        title: "Success!",
+        description: "Your details have been sent successfully. We will contact you soon!",
+      });
+      
+      closePopup();
+      setFormData({ name: '', phone: '', address: '', message: '' });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again or contact us directly.",
         variant: "destructive"
       });
-      return;
     }
-
-    let leadMessage = '🎯 *New Lead Captured!*\n\n';
-    leadMessage += `👤 *Name:* ${formData.name}\n`;
-    leadMessage += `📱 *Phone:* ${formData.phone}\n`;
-    
-    if (formData.address.trim()) {
-      leadMessage += `🏠 *Address:* ${formData.address}\n`;
-    }
-    
-    if (formData.message.trim()) {
-      leadMessage += `💬 *Message:* ${formData.message}\n`;
-    }
-    
-    leadMessage += `\n⏰ *Time:* ${new Date().toLocaleString()}`;
-    leadMessage += '\n\n_Generated via Luva Lead Capture_';
-    
-    const whatsappUrl = `https://wa.me/919656778508?text=${encodeURIComponent(leadMessage)}`;
-    window.open(whatsappUrl, '_blank');
-    
-    toast({
-      title: "Success!",
-      description: "Your details have been sent successfully. We will contact you soon!",
-    });
-    
-    closePopup();
-    setFormData({ name: '', phone: '', address: '', message: '' });
   };
 
   if (!isVisible) return null;
@@ -87,7 +107,7 @@ const LeadCapturePopup = () => {
       onClick={closePopup}
     >
       <div 
-        className="bg-white rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl animate-scale-in"
+        className="bg-white rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl animate-scale-in relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button
