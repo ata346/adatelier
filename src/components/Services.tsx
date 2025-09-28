@@ -10,23 +10,23 @@ const Services = () => {
   const services = [
     {
       icon: Palette,
-      title: "Strategic Branding",
-      description: "Complete brand identity that influences perception and drives action. We create memorable identities that don't just look good - they work strategically to position your brand for influence."
+      title: "Brand Design",
+      description: "Complete brand identity that helps people remember you and take action. We create logos and designs that don't just look great - they help your business stand out and grow."
     },
     {
       icon: Megaphone,
-      title: "Influence-Driven Campaigns",
-      description: "Strategic campaign development and management that goes beyond reach. We create campaigns designed to influence decisions, not just capture attention."
+      title: "Marketing Campaigns",
+      description: "Smart campaign planning and management that actually gets results. We create campaigns that help people choose your business, not just notice it."
     },
     {
       icon: Monitor,
-      title: "Digital Experience Design",
-      description: "Compelling digital experiences across all touchpoints. From websites to digital advertisements, we design interfaces that engage and influence your audience meaningfully."
+      title: "Website & Digital Design",
+      description: "Beautiful digital experiences everywhere your customers find you. From websites to online ads, we design things that look great and work well for your business."
     },
     {
       icon: Share2,
-      title: "Social Influence Strategy",
-      description: "Strategic social media presence that builds genuine influence. We develop content and strategies that create lasting engagement and drive real business results."
+      title: "Social Media Strategy",
+      description: "Smart social media that actually helps your business. We create content and plans that get people engaged with your brand and become customers."
     }
   ];
 
@@ -53,9 +53,8 @@ const Services = () => {
             className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed"
             itemProp="description"
           >
-            Our curated network of creative specialists delivers strategic branding and digital marketing solutions 
-            that create influence, not just attention. From brand design to social media campaigns, we deliver 
-            comprehensive creative solutions that drive real results.
+            Our team of creative experts delivers great branding and digital marketing that actually helps your business grow. 
+            From logo design to social media, we create beautiful work that gets you real customers and results.
           </p>
         </div>
         

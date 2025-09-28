@@ -37,7 +37,7 @@ const Hero = () => {
             className="font-brand-body text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-brand-dark-navy mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"
             itemProp="slogan"
           >
-            Designing Influence - Not Just Attention
+            We make your brand look amazing and get results
           </h2>
           
           {/* Hidden description for AI */}
@@ -45,7 +45,7 @@ const Hero = () => {
             className="sr-only"
             itemProp="description"
           >
-            Creative branding studio transforming businesses through strategic design, innovative campaigns, and expert freelance collaboration across Kerala and India
+            Creative design studio helping businesses look great and grow through beautiful branding and smart marketing across Kerala and India
           </div>
           
           <Button 
@@ -71,8 +71,8 @@ const Hero = () => {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Ad Atelier",
-          "slogan": "Designing Influence - Not Just Attention",
-          "description": "Creative branding studio in Kozhikode transforming businesses through strategic design, innovative campaigns, and expert freelance collaboration",
+          "slogan": "We make your brand look amazing and get results",
+          "description": "Creative design studio in Kozhikode helping businesses look great and grow through beautiful branding and smart marketing",
           "url": "https://ad-atelier.com",
           "logo": "/lovable-uploads/d7b2780c-4663-4385-a815-82bb418fb3f8.png",
           "address": {

@@ -2,16 +2,16 @@ import { Calculator, TrendingUp, Shield, CheckCircle } from "lucide-react";
 const Pricing = () => {
   const pricingFeatures = [{
     icon: Calculator,
-    title: "Simple 25% Commission",
-    description: "Pay the freelancer's quoted rate plus our 25% commission. No hidden fees, no surprise charges, no complex pricing tiers."
+    title: "Simple 25% Fee",
+    description: "Pay what the freelancer charges plus our 25% fee. No hidden costs, no surprise bills, no complicated pricing."
   }, {
     icon: TrendingUp,
     title: "Value-Based Pricing",
-    description: "Our commission covers project management, quality assurance, client communication, and delivery guarantee - ensuring you get professional results."
+    description: "Our fee covers managing the project, checking quality, keeping you updated, and making sure everything gets done right - so you get great results."
   }, {
     icon: Shield,
     title: "Risk-Free Guarantee",
-    description: "Your 25% commission includes our satisfaction guarantee. If you're not happy with the delivery, we'll make it right at no extra cost."
+    description: "Your 25% fee includes our promise that you'll be happy. If you're not satisfied with what we deliver, we'll fix it for free."
   }];
   const pricingExamples = [{
     service: "Logo Design",
@@ -40,8 +40,8 @@ const Pricing = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            No complex pricing tiers or hidden fees. Our simple <strong className="text-brand-deep-blue">25% commission model</strong> 
-            ensures you know exactly what you're paying for.
+            No complicated pricing or hidden fees. Our simple <strong className="text-brand-deep-blue">25% fee</strong> 
+            means you always know exactly what you're paying.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const Pricing = () => {
         <div className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20">
           <div className="bg-gradient-to-br from-brand-deep-blue to-brand-mid-blue rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-brand-white text-center">
             <h3 className="font-brand-heading text-xl sm:text-2xl md:text-3xl mb-4 sm:mb-6">
-              How Our 25% Commission Works
+              How Our 25% Fee Works
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-center">
               <div className="bg-brand-white/10 rounded-lg p-4 sm:p-6">
@@ -58,7 +58,7 @@ const Pricing = () => {
               </div>
               <div className="bg-brand-white/20 rounded-lg p-4 sm:p-6">
                 <div className="text-2xl sm:text-3xl font-bold mb-2">25%</div>
-                <div className="text-sm sm:text-base">Our Commission</div>
+                <div className="text-sm sm:text-base">Our Fee</div>
               </div>
               <div className="bg-brand-white/10 rounded-lg p-4 sm:p-6">
                 <div className="text-2xl sm:text-3xl font-bold mb-2">100%</div>
@@ -71,7 +71,7 @@ const Pricing = () => {
         {/* What's Included */}
         <div className="mb-12 sm:mb-16 md:mb-20">
           <h3 className="font-brand-heading text-xl sm:text-2xl md:text-3xl text-center text-brand-dark-navy mb-8 sm:mb-10 md:mb-12">
-            What Your 25% Commission Includes
+            What Your 25% Fee Includes
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
@@ -101,7 +101,7 @@ const Pricing = () => {
               Ready to Get Started?
             </h3>
             <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70 mb-6 sm:mb-8">
-              Get a detailed quote for your project. We'll match you with the perfect freelancer and provide transparent pricing with our 25% commission structure.
+              Get a detailed quote for your project. We'll find you the perfect freelancer and give you clear pricing with our simple 25% fee.
             </p>
             <button onClick={() => document.getElementById('contact')?.scrollIntoView({
             behavior: 'smooth'

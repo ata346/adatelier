@@ -27,9 +27,8 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                Struggling with agencies that promise the world but deliver generic solutions? At Ad Atelier, we solve 
-                the fundamental problem of mismatched expertise. Our network-based approach means you get the exact 
-                specialist your project needs - no junior staff, no learning curves on your dime.
+                Tired of agencies that make big promises but give you basic work? We fix this by connecting you with 
+                the right creative person for your project. No inexperienced staff, no learning on your time.
               </p>
             </div>
             
@@ -39,9 +38,8 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                Tired of campaigns that look impressive but don't move the needle? We focus on influence-driven results 
-                that directly impact your business goals. Every creative decision is strategically aligned with measurable 
-                outcomes that matter to your bottom line.
+                Frustrated with marketing that looks pretty but doesn't help your business? We focus on work that 
+                actually gets you customers and grows your business. Every design choice is made to help you reach your goals.
               </p>
             </div>
             
@@ -51,10 +49,9 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                Frustrated with slow processes and bloated agency overhead? Our streamlined network delivers the 
-                reliability of an established agency with the agility and cost-effectiveness of working directly 
-                with top-tier specialists. <strong className="text-brand-deep-blue">With our transparent 25% commission 
-                structure, you get faster results, better value, and direct access to expertise</strong> without hidden fees or inflated costs.
+                Annoyed by slow agencies and expensive overhead? We work with skilled freelancers to give you 
+                the quality of a big agency but faster and cheaper. <strong className="text-brand-deep-blue">With our simple 25% 
+                fee, you get great work, fair pricing, and direct access to talented people</strong> without surprise costs.
               </p>
             </div>
           </div>
@@ -66,7 +63,7 @@ const About = () => {
             <div className="mb-4 sm:mb-6">
               <div className="bg-brand-deep-blue/10 rounded-lg p-3 sm:p-4 border border-brand-deep-blue/20 mb-4">
                 <p className="font-brand-body text-xs sm:text-sm md:text-base text-brand-deep-blue font-semibold">
-                  <strong>For Freelancers:</strong> Join our network and keep 75% of your project earnings - we take only 25% commission for client acquisition, project management, and quality assurance.
+                  <strong>For Freelancers:</strong> Join our team and keep 75% of what you earn - we take only 25% for finding you clients, managing projects, and ensuring quality.
                 </p>
               </div>
             </div>
@@ -80,7 +77,7 @@ const About = () => {
               Join as a Freelancer
             </a>
             <p className="font-brand-body text-xs sm:text-sm md:text-base text-brand-dark-navy/70 leading-relaxed mt-3 sm:mt-4">
-              Join our creative team and help craft compelling visual experiences that transform brands and drive real engagement.
+              Join our creative team and help make amazing designs that help brands grow and connect with their customers.
             </p>
           </div>
         </aside>
@@ -93,7 +90,7 @@ const About = () => {
             "mainEntity": {
               "@type": "Organization",
               "name": "Ad Atelier",
-              "description": "Innovative branding agency transforming business identity through collaborative creative partnerships and strategic marketing solutions",
+              "description": "Creative design agency helping businesses look great and grow through teamwork with talented freelancers and smart marketing",
               "knowsAbout": [
                 "Strategic Branding",
                 "Digital Marketing",

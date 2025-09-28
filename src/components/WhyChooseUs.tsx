@@ -5,26 +5,26 @@ const WhyChooseUs = () => {
     {
       icon: Target,
       title: "Results That Matter",
-      problem: "Tired of campaigns that look good but don't drive business results?",
-      solution: "We focus on measurable outcomes that directly impact your bottom line, not just vanity metrics."
+      problem: "Tired of marketing that looks nice but doesn't help your business?",
+      solution: "We focus on results that actually matter to your business, not just pretty numbers that don't mean anything."
     },
     {
       icon: Users,
       title: "Right Talent, Right Time",
-      problem: "Struggling with agencies that assign junior staff to your important projects?",
-      solution: "Our curated network ensures you get senior-level expertise matched specifically to your project needs."
+      problem: "Frustrated with agencies that give you inexperienced people for important work?",
+      solution: "Our network of professionals makes sure you get experienced experts who are perfect for your specific project."
     },
     {
       icon: Clock,
       title: "Speed Without Compromise",
-      problem: "Frustrated with slow agency processes and endless revision cycles?",
-      solution: "Our streamlined freelance model delivers faster turnarounds while maintaining exceptional quality standards."
+      problem: "Annoyed with slow agencies and endless changes back and forth?",
+      solution: "Our simple freelance approach gets things done faster while still keeping the quality high."
     },
     {
       icon: CheckCircle,
-      title: "Transparent 25% Commission",
-      problem: "Paying premium agency rates for overhead costs that don't benefit your project?",
-      solution: "Our clear 25% commission model eliminates hidden fees - you pay the freelancer's rate plus our 25% for project management, quality assurance, and delivery guarantee."
+      title: "Simple 25% Fee",
+      problem: "Paying expensive agency prices for costs that don't help your project?",
+      solution: "Our clear 25% fee has no hidden costs - you pay what the freelancer charges plus our 25% for managing everything, checking quality, and making sure it gets done."
     }
   ];
 
@@ -37,8 +37,8 @@ const WhyChooseUs = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            We understand the challenges businesses face with traditional agencies. Here's how we solve them differently 
-            with our <strong className="text-brand-deep-blue">transparent 25% commission structure</strong>.
+            We know the problems businesses have with regular agencies. Here's how we do things better 
+            with our <strong className="text-brand-deep-blue">simple 25% fee</strong>.
           </p>
         </div>
         
