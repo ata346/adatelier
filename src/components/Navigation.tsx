@@ -35,15 +35,25 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/95 backdrop-blur-md shadow-elegant' : 'bg-transparent'
-    }`}>
+    <nav 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-elegant' : 'bg-transparent'
+      }`}
+      role="navigation"
+      aria-label="Main navigation for Ad Atelier branding agency"
+      itemScope
+      itemType="https://schema.org/SiteNavigationElement"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
           <div 
             className="font-brand-heading text-lg xs:text-xl sm:text-2xl gradient-text cursor-pointer touch-manipulation tap-highlight-transparent"
             onClick={() => scrollToSection("#home")}
+            role="button"
+            tabIndex={0}
+            aria-label="Ad Atelier - Return to homepage"
+            onKeyDown={(e) => e.key === 'Enter' && scrollToSection("#home")}
           >
             Ad Atelier
           </div>
@@ -55,15 +65,17 @@ const Navigation = () => {
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
                 className="font-brand-body text-sm xl:text-base text-brand-dark-navy hover:text-brand-deep-blue transition-colors duration-300 relative group whitespace-nowrap"
+                aria-label={`Navigate to ${item.name} section`}
               >
                 {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-deep-blue transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-deep-blue transition-all duration-300 group-hover:w-full" aria-hidden="true"></span>
               </button>
             ))}
             <Button 
               variant="hero" 
               size="sm"
               onClick={() => scrollToSection("#contact")}
+              aria-label="Get a free quote for branding and marketing services"
             >
               Get Quote
             </Button>

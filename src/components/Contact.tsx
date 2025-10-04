@@ -78,10 +78,20 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-brand-light-gray/30">
+    <section 
+      id="contact" 
+      className="py-12 sm:py-16 md:py-20 bg-brand-light-gray/30"
+      aria-labelledby="contact-heading"
+      itemScope
+      itemType="https://schema.org/ContactPage"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="font-brand-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-brand-dark-navy px-2 sm:px-4 leading-tight">
+          <h2 
+            id="contact-heading"
+            className="font-brand-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-brand-dark-navy px-2 sm:px-4 leading-tight"
+            itemProp="name"
+          >
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
@@ -141,8 +151,11 @@ const Contact = () => {
                 <div className="flex flex-col items-center space-y-3">
                   <img 
                     src={luvaLogo} 
-                    alt="Luva Community Logo" 
+                    alt="Luva Community Logo - Join our free creative community on WhatsApp" 
                     className="w-24 sm:w-32 h-auto"
+                    width="128"
+                    height="128"
+                    loading="lazy"
                   />
                   <p className="font-brand-body text-xs sm:text-sm text-brand-dark-navy/70 max-w-xs">
                     Connect with fellow creators, share insights, and stay updated with the latest trends
