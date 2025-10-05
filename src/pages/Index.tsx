@@ -9,6 +9,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import LeadCapturePopup from "@/components/LeadCapturePopup";
+import AdPopup from "@/components/AdPopup";
 import SEOHead from "@/components/SEOHead";
 import AIFriendlyData from "@/components/AIFriendlyData";
 
@@ -92,6 +93,7 @@ const Index = () => {
       <Footer />
       <WhatsAppWidget />
       <LeadCapturePopup />
+      <AdPopup />
     </div>
     </>
   );
