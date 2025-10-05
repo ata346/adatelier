@@ -1,26 +1,31 @@
-import { Ear, Users, Palette, Rocket } from "lucide-react";
+import { Search, Users, FileText, CheckCircle, Sparkles, Clock } from "lucide-react";
 
 const HowWeWork = () => {
   const processSteps = [
     {
-      icon: Ear,
-      title: "We Listen",
-      description: "We start by learning about your business, goals, and ideas to figure out what will connect with your customers."
+      icon: Search,
+      title: "Step 1: Choose Your Service",
+      description: "Pick the service that fits your needs perfectly."
     },
     {
       icon: Users,
-      title: "We Assemble",
-      description: "From our network of talented freelancers, we pick the best people for your project - designers, planners, and creatives who have exactly the skills you need."
+      title: "Step 2: Book Your Team",
+      description: "Handpick a skilled team to handle your project with ease."
     },
     {
-      icon: Palette,
-      title: "We Create",
-      description: "While our freelancers do the creative work, we handle the schedules, quality checks, and communication. This means you get great work that's done right and on time."
+      icon: FileText,
+      title: "Step 3: Share Your Brief",
+      description: "Provide all the details and requirements to ensure we deliver exactly what you want."
     },
     {
-      icon: Rocket,
-      title: "We Deliver",
-      description: "Whether it's marketing campaigns, brand design, or social media content, we deliver projects that actually help your business grow and succeed."
+      icon: CheckCircle,
+      title: "Step 4: Review the Work",
+      description: "Check the results, give feedback, and ensure it meets your expectations."
+    },
+    {
+      icon: Sparkles,
+      title: "Step 5: Done!",
+      description: "Sit back and relax as your project comes to life seamlessly."
     }
   ];
 
@@ -39,26 +44,14 @@ const HowWeWork = () => {
             className="font-brand-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-brand-dark-navy px-2 sm:px-4 leading-tight"
             itemProp="name"
           >
-            How <span className="gradient-text">We Work</span>
+            <span className="gradient-text">5 Steps, Zero Stress</span>
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
         </div>
         
-        <div className="max-w-4xl mx-auto text-center mb-10 sm:mb-12 md:mb-16 px-2 sm:px-4">
-          <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed">
-            We create designs that help your business succeed. Working with a network of skilled freelance 
-            creatives, we build the perfect team for every project. <strong className="text-brand-deep-blue">Our simple 
-            25% fee keeps quality high while keeping costs fair</strong> - no expensive employees, 
-            no wasted overhead - just the creative talent your business needs from the best people.
-          </p>
-        </div>
-
         <div className="mb-10 sm:mb-12 md:mb-16">
-          <h3 className="font-brand-heading text-xl xs:text-2xl sm:text-3xl md:text-4xl text-center text-brand-dark-navy mb-8 sm:mb-10 md:mb-12">
-            Our Process
-          </h3>
           
-          <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 xs:gap-5 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 xs:gap-5 sm:gap-6 lg:gap-8">
             {processSteps.map((step, index) => {
               const IconComponent = step.icon;
               return (
@@ -93,15 +86,20 @@ const HowWeWork = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto text-center px-2 sm:px-4">
-          <div className="bg-gradient-to-br from-brand-white to-brand-light-gray/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant border border-brand-mid-blue/10">
-            <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed font-medium mb-4">
-              We give you the flexibility of working with freelancers plus the reliability of an agency.
+        <div className="max-w-4xl mx-auto text-center px-2 sm:px-4 mt-12 sm:mt-16 md:mt-20">
+          <div className="bg-gradient-to-br from-brand-deep-blue/5 to-brand-mid-blue/5 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-elegant border border-brand-mid-blue/20">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-brand-deep-blue" />
+              <h3 className="font-brand-heading text-xl xs:text-2xl sm:text-3xl md:text-4xl text-brand-dark-navy">
+                On-Demand Teams Built in a Blink
+              </h3>
+            </div>
+            <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed mb-4 sm:mb-6">
+              With our curated team of experts, you can instantly extend your in-house capabilities, ensuring top-notch results every time.
             </p>
-            <div className="bg-brand-deep-blue/10 rounded-lg p-4 border-l-4 border-brand-deep-blue">
-              <p className="font-brand-body text-sm sm:text-base text-brand-deep-blue font-semibold">
-                <strong>Simple Pricing:</strong> We use a simple 25% fee - you pay what the freelancer charges 
-                plus our 25% for managing the project, checking quality, and making sure everything gets done right.
+            <div className="bg-brand-white rounded-xl p-4 sm:p-6 border-l-4 border-brand-deep-blue">
+              <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/90 leading-relaxed">
+                Our on-demand teams are more than just skilled—they're <strong className="text-brand-deep-blue">agile, adaptive, and ready to work behind the scenes</strong>, even when you're off the clock. Experience efficiency and quality without the stress.
               </p>
             </div>
           </div>
