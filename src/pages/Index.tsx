@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Pricing from "@/components/Pricing";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import HowWeWork from "@/components/HowWeWork";
+import FreelancerProcess from "@/components/FreelancerProcess";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
@@ -82,6 +83,11 @@ const Index = () => {
         {/* How We Work Section */}
         <section id="how-we-work" aria-labelledby="how-we-work-heading">
           <HowWeWork />
+        </section>
+        
+        {/* Freelancer Process Section */}
+        <section id="freelancer-process" aria-labelledby="freelancer-process-heading">
+          <FreelancerProcess />
         </section>
         
         {/* Contact Section */}
