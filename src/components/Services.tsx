@@ -3,7 +3,8 @@ import {
   Megaphone, 
   Monitor, 
   Settings, 
-  Share2 
+  Share2,
+  CreditCard
 } from "lucide-react";
 
 const Services = () => {
@@ -27,6 +28,11 @@ const Services = () => {
       icon: Share2,
       title: "Social Media Strategy",
       description: "Smart social media that actually helps your business. We create content and plans that get people engaged with your brand and become customers."
+    },
+    {
+      icon: CreditCard,
+      title: "Founder Credential Card",
+      description: "Your brand identity deserves something you can hold with pride. We design custom premium PVC Founder Credential Cards that represent your entrepreneurial journey and brand story. From custom design to doorstep delivery, we create a tangible symbol of who you are as a founder."
     }
   ];
 
