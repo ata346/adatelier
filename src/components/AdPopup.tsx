@@ -34,7 +34,7 @@ const AdPopup = () => {
 
   return (
     <div 
-      className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[10001] flex items-center justify-center p-4 animate-fade-in"
+      className="fixed inset-0 bg-foreground/60 backdrop-blur-sm z-[10001] flex items-center justify-center p-4 animate-fade-in"
       onClick={closePopup}
     >
       <div 

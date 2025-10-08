@@ -103,16 +103,16 @@ const LeadCapturePopup = () => {
 
   return (
     <div 
-      className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[10000] flex items-center justify-center p-4 animate-fade-in"
+      className="fixed inset-0 bg-foreground/50 backdrop-blur-sm z-[10000] flex items-center justify-center p-4 animate-fade-in"
       onClick={closePopup}
     >
       <div 
-        className="bg-white rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl animate-scale-in relative"
+        className="bg-background rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl animate-scale-in relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={closePopup}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors"
+          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-muted hover:bg-muted/80 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
           aria-label="Close popup"
         >
           <X size={18} />
@@ -135,7 +135,7 @@ const LeadCapturePopup = () => {
             value={formData.name}
             onChange={handleInputChange}
             required
-            className="w-full p-3 sm:p-4 border-2 border-gray-200 rounded-xl text-sm sm:text-base focus:border-brand-electric-blue focus:outline-none focus:ring-2 focus:ring-brand-electric-blue/20 transition-all font-brand-body"
+            className="w-full p-3 sm:p-4 border-2 border-border rounded-xl text-sm sm:text-base focus:border-brand-electric-blue focus:outline-none focus:ring-2 focus:ring-brand-electric-blue/20 transition-all font-brand-body"
           />
           
           <input
@@ -145,7 +145,7 @@ const LeadCapturePopup = () => {
             value={formData.phone}
             onChange={handleInputChange}
             required
-            className="w-full p-3 sm:p-4 border-2 border-gray-200 rounded-xl text-sm sm:text-base focus:border-brand-electric-blue focus:outline-none focus:ring-2 focus:ring-brand-electric-blue/20 transition-all font-brand-body"
+            className="w-full p-3 sm:p-4 border-2 border-border rounded-xl text-sm sm:text-base focus:border-brand-electric-blue focus:outline-none focus:ring-2 focus:ring-brand-electric-blue/20 transition-all font-brand-body"
           />
           
           <input
@@ -154,7 +154,7 @@ const LeadCapturePopup = () => {
             placeholder="Your Address"
             value={formData.address}
             onChange={handleInputChange}
-            className="w-full p-3 sm:p-4 border-2 border-gray-200 rounded-xl text-sm sm:text-base focus:border-brand-electric-blue focus:outline-none focus:ring-2 focus:ring-brand-electric-blue/20 transition-all font-brand-body"
+            className="w-full p-3 sm:p-4 border-2 border-border rounded-xl text-sm sm:text-base focus:border-brand-electric-blue focus:outline-none focus:ring-2 focus:ring-brand-electric-blue/20 transition-all font-brand-body"
           />
           
           <textarea
@@ -163,24 +163,24 @@ const LeadCapturePopup = () => {
             rows={3}
             value={formData.message}
             onChange={handleInputChange}
-            className="w-full p-3 sm:p-4 border-2 border-gray-200 rounded-xl text-sm sm:text-base focus:border-brand-electric-blue focus:outline-none focus:ring-2 focus:ring-brand-electric-blue/20 transition-all resize-vertical min-h-[80px] font-brand-body"
+            className="w-full p-3 sm:p-4 border-2 border-border rounded-xl text-sm sm:text-base focus:border-brand-electric-blue focus:outline-none focus:ring-2 focus:ring-brand-electric-blue/20 transition-all resize-vertical min-h-[80px] font-brand-body"
           />
           
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-brand-electric-blue to-brand-electric-blue/90 text-white p-3 sm:p-4 rounded-xl font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 font-brand-body"
+            className="w-full bg-gradient-to-r from-brand-electric-blue to-brand-electric-blue/90 text-brand-white p-3 sm:p-4 rounded-xl font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 font-brand-body"
           >
             <MessageCircle size={18} />
             Send My Details
           </button>
         </form>
 
-        <div className="text-center mt-5 pt-5 border-t border-gray-200">
+        <div className="text-center mt-5 pt-5 border-t border-border">
           <a 
             href="https://widgetify-two.vercel.app" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-xs text-gray-500 hover:text-gray-700 transition-colors font-brand-body"
+            className="text-xs text-muted-foreground hover:text-foreground transition-colors font-brand-body"
           >
             Powered by Widgetify
           </a>
