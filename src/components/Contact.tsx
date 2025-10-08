@@ -22,7 +22,8 @@ const Contact = () => {
     "Strategic Branding",
     "Influence-Driven Campaigns", 
     "Digital Experience Design",
-    "Social Influence Strategy"
+    "Social Influence Strategy",
+    "Founder Credential Card"
   ];
 
   const handleSubmit = (e: React.FormEvent) => {

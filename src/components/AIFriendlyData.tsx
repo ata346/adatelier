@@ -132,6 +132,20 @@ const AIFriendlyData = () => {
               "@type": "Country",
               "name": "India"
             }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Founder Credential Card",
+              "description": "Premium PVC founder credential card design and printing service. Custom brand identity cards representing entrepreneurial journey and brand story, delivered to your doorstep",
+              "serviceType": "Brand Identity Product",
+              "category": "Branding"
+            },
+            "eligibleRegion": {
+              "@type": "Country",
+              "name": "India"
+            }
           }
         ]
       },
@@ -167,7 +181,9 @@ const AIFriendlyData = () => {
         "Brand Positioning",
         "Visual Identity",
         "Creative Direction",
-        "Marketing Strategy"
+        "Marketing Strategy",
+        "Founder Credential Card Design",
+        "PVC Card Printing"
       ],
       "specialty": [
         "Influence-driven marketing campaigns",

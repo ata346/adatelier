@@ -88,7 +88,8 @@ const Hero = () => {
             "Social Media Marketing",
             "Brand Identity Design",
             "Logo Design",
-            "Marketing Campaigns"
+            "Marketing Campaigns",
+            "Founder Credential Card"
           ]
         })
       }} />

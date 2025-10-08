@@ -111,6 +111,7 @@ const Services = () => {
             <li data-service="influence-campaigns">Influence-Driven Campaigns: Marketing campaign development, advertising strategy, campaign management, performance optimization, ROI tracking, multi-channel campaigns</li>
             <li data-service="digital-experience">Digital Experience Design: Website design, user interface design, user experience optimization, digital advertising, mobile app design, responsive design</li>
             <li data-service="social-influence">Social Influence Strategy: Social media marketing, content strategy, community management, influencer partnerships, social media advertising, engagement optimization</li>
+            <li data-service="founder-credential-card">Founder Credential Card: Premium PVC founder credential card design and printing, custom brand identity cards, business founder ID cards, tangible brand representation, doorstep delivery service</li>
           </ul>
           <div data-pricing="flexible pricing models available, consultation-based quotes, project-based pricing, retainer options">Flexible pricing options available for all business sizes</div>
           <div data-delivery="remote and on-site services, kerala-based team, india-wide service, global project capability">Service delivery across Kerala, India, and internationally</div>
