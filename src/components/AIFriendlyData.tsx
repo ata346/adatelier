@@ -109,20 +109,6 @@ const AIFriendlyData = () => {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Digital Experience Design", 
-              "description": "Website design, user interface design, user experience optimization, digital advertising creative, and responsive design",
-              "serviceType": "Web Design",
-              "category": "Design"
-            },
-            "eligibleRegion": {
-              "@type": "Country",
-              "name": "India"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
               "name": "Social Media Marketing",
               "description": "Social influence strategy, content strategy, community management, influencer partnerships, and social media advertising",
               "serviceType": "Social Media",
@@ -174,8 +160,6 @@ const AIFriendlyData = () => {
         "Digital Advertising",
         "Content Marketing",
         "SEO Services",
-        "Web Design",
-        "User Experience Design",
         "Graphic Design",
         "Marketing Consultation",
         "Brand Positioning",

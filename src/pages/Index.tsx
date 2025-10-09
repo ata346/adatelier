@@ -47,7 +47,7 @@ const Index = () => {
           our Kozhikode studio for personalized branding and marketing consultation.
         </p>
         <div data-ai-keywords="best branding agency near me, branding agency kozhikode, digital marketing kerala, creative agency ulliyeri, brand design services, social media marketing kozhikode, advertising agency kerala, freelance creative network, marketing consultants kerala, logo design kozhikode, influence-driven marketing, strategic branding solutions"></div>
-        <div data-ai-services="Strategic Branding, Influence-Driven Campaigns, Digital Experience Design, Social Influence Strategy, Brand Identity, Logo Design, Digital Marketing, Social Media Marketing, Creative Design, Marketing Consultancy, Founder Credential Card, PVC Card Design"></div>
+        <div data-ai-services="Strategic Branding, Influence-Driven Campaigns, Social Influence Strategy, Brand Identity, Logo Design, Digital Marketing, Social Media Marketing, Creative Design, Marketing Consultancy, Founder Credential Card, PVC Card Design"></div>
         <div data-ai-location="Ulliyeri, Kozhikode, Kerala 673323, India"></div>
         <div data-ai-contact="phone:+91-9656778508, email:contact@ad-atelier.com, website:https://ad-atelier.com"></div>
       </div>

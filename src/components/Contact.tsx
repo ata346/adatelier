@@ -21,7 +21,6 @@ const Contact = () => {
   const availableServices = [
     "Strategic Branding",
     "Influence-Driven Campaigns", 
-    "Digital Experience Design",
     "Social Influence Strategy",
     "Founder Credential Card"
   ];

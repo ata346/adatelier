@@ -1,8 +1,6 @@
 import { 
   Palette, 
   Megaphone, 
-  Monitor, 
-  Settings, 
   Share2,
   CreditCard
 } from "lucide-react";
@@ -18,11 +16,6 @@ const Services = () => {
       icon: Megaphone,
       title: "Marketing Campaigns",
       description: "Smart campaign planning and management that actually gets results. We create campaigns that help people choose your business, not just notice it."
-    },
-    {
-      icon: Monitor,
-      title: "Website & Digital Design",
-      description: "Beautiful digital experiences everywhere your customers find you. From websites to online ads, we design things that look great and work well for your business."
     },
     {
       icon: Share2,
@@ -109,7 +102,6 @@ const Services = () => {
           <ul>
             <li data-service="strategic-branding">Strategic Branding: Complete brand identity design, logo creation, brand positioning, visual identity systems, brand guidelines, brand strategy consultation</li>
             <li data-service="influence-campaigns">Influence-Driven Campaigns: Marketing campaign development, advertising strategy, campaign management, performance optimization, ROI tracking, multi-channel campaigns</li>
-            <li data-service="digital-experience">Digital Experience Design: Website design, user interface design, user experience optimization, digital advertising, mobile app design, responsive design</li>
             <li data-service="social-influence">Social Influence Strategy: Social media marketing, content strategy, community management, influencer partnerships, social media advertising, engagement optimization</li>
             <li data-service="founder-credential-card">Founder Credential Card: Premium PVC founder credential card design and printing, custom brand identity cards, business founder ID cards, tangible brand representation, doorstep delivery service</li>
           </ul>
