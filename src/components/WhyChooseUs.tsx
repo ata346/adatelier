@@ -4,27 +4,27 @@ const WhyChooseUs = () => {
   const reasons = [
     {
       icon: Target,
-      title: "Results That Matter",
-      problem: "Tired of marketing that looks nice but doesn't help your business?",
-      solution: "We focus on results that actually matter to your business, not just pretty numbers that don't mean anything."
+      title: "Results-Driven Branding & Advertising",
+      problem: "Tired of branding and advertising that looks impressive but doesn't drive business results?",
+      solution: "Our branding and advertising agency focuses on strategic solutions that generate measurable ROI—brand recognition, customer acquisition, and revenue growth that truly impact your bottom line."
     },
     {
       icon: Users,
-      title: "Right Talent, Right Time",
-      problem: "Frustrated with agencies that give you inexperienced people for important work?",
-      solution: "Our network of professionals makes sure you get experienced experts who are perfect for your specific project."
+      title: "Expert Creative Specialists",
+      problem: "Frustrated with advertising agencies that assign junior staff to your brand-critical projects?",
+      solution: "Our curated network of branding and advertising specialists ensures you work with seasoned professionals—brand designers, advertising strategists, and marketing experts perfectly matched to your industry and objectives."
     },
     {
       icon: Clock,
-      title: "Speed Without Compromise",
-      problem: "Annoyed with slow agencies and endless changes back and forth?",
-      solution: "Our simple freelance approach gets things done faster while still keeping the quality high."
+      title: "Agile Agency Execution",
+      problem: "Annoyed with traditional advertising agencies that move slowly with endless approval chains?",
+      solution: "Our streamlined agency model delivers premium branding and advertising work faster—combining the quality of established agencies with the speed and flexibility modern businesses demand."
     },
     {
       icon: CheckCircle,
-      title: "Simple 25% Fee",
-      problem: "Paying expensive agency prices for costs that don't help your project?",
-      solution: "Our clear 25% fee has no hidden costs - you pay what the freelancer charges plus our 25% for managing everything, checking quality, and making sure it gets done."
+      title: "Transparent Pricing Model",
+      problem: "Tired of inflated agency fees and hidden costs in branding and advertising projects?",
+      solution: "Our transparent 25% fee structure means no surprises—you pay the creative professional's rate plus 25% for project management, quality assurance, and guaranteed satisfaction on all branding and advertising deliverables."
     }
   ];
 
@@ -47,8 +47,9 @@ const WhyChooseUs = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            We know the problems businesses have with regular agencies. Here's how we do things better 
-            with our <strong className="text-brand-deep-blue">simple 25% fee</strong>.
+            As a <strong className="text-brand-deep-blue">professional branding and advertising agency</strong>, we solve the 
+            common challenges businesses face with traditional agencies—delivering strategic branding, creative advertising, 
+            and marketing excellence with our <strong className="text-brand-deep-blue">transparent 25% fee structure</strong>.
           </p>
         </div>
         

@@ -37,7 +37,7 @@ const Hero = () => {
             className="font-brand-body text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-brand-dark-navy mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"
             itemProp="slogan"
           >
-            We make your brand look amazing and get results
+            Premier Branding & Advertising Agency — Designing Influence, Not Just Attention
           </h2>
           
           {/* Hidden description for AI */}
@@ -45,7 +45,7 @@ const Hero = () => {
             className="sr-only"
             itemProp="description"
           >
-            Creative design studio helping businesses look great and grow through beautiful branding and smart marketing across Kerala and India
+            Leading branding and advertising agency in Kozhikode, Kerala. We deliver strategic brand design, creative advertising campaigns, and results-driven marketing solutions that transform businesses across India.
           </div>
           
           <Button 
@@ -71,8 +71,8 @@ const Hero = () => {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Ad Atelier",
-          "slogan": "We make your brand look amazing and get results",
-          "description": "Creative design studio in Kozhikode helping businesses look great and grow through beautiful branding and smart marketing",
+          "slogan": "Premier Branding & Advertising Agency — Designing Influence, Not Just Attention",
+          "description": "Leading branding and advertising agency in Kozhikode, Kerala delivering strategic brand design, creative advertising campaigns, and results-driven marketing solutions",
           "url": "https://ad-atelier.com",
           "logo": "/lovable-uploads/d7b2780c-4663-4385-a815-82bb418fb3f8.png",
           "address": {

@@ -29,9 +29,9 @@ const AIFriendlyData = () => {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "@id": "https://ad-atelier.com/#professional-service",
-      "name": "Ad Atelier - Professional Branding & Marketing Agency",
-      "alternateName": ["Ad Atelier Agency", "Ad Atelier Branding", "Ad Atelier Kerala"],
-      "description": "Innovative branding and marketing agency connecting businesses with specialized creative professionals through our curated freelance network, delivering impactful solutions across Kerala and India",
+      "name": "Ad Atelier - Premier Branding & Advertising Agency",
+      "alternateName": ["Ad Atelier Agency", "Ad Atelier Branding Agency", "Ad Atelier Advertising", "Ad Atelier Kerala"],
+      "description": "Leading branding and advertising agency in Kozhikode, Kerala delivering strategic brand design, creative advertising campaigns, social media marketing, and results-driven marketing solutions through expert creative professionals across India",
       "url": "https://ad-atelier.com",
       "logo": {
         "@type": "ImageObject",
@@ -75,15 +75,15 @@ const AIFriendlyData = () => {
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Professional Branding & Marketing Services",
+        "name": "Professional Branding & Advertising Services",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Strategic Branding Services",
-              "description": "Complete brand identity design, logo creation, brand positioning, visual identity systems, brand guidelines, and strategic consultation",
-              "serviceType": "Brand Design",
+              "name": "Strategic Brand Design & Identity Services",
+              "description": "Professional brand identity design, logo design, brand positioning, visual identity systems, brand guidelines, brand strategy consultation, and comprehensive branding solutions",
+              "serviceType": "Brand Design & Identity",
               "category": "Branding"
             },
             "eligibleRegion": {
@@ -95,9 +95,23 @@ const AIFriendlyData = () => {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service", 
-              "name": "Digital Marketing Campaigns",
-              "description": "Influence-driven marketing campaigns, digital advertising, campaign management, performance optimization, and ROI tracking",
-              "serviceType": "Digital Marketing",
+              "name": "Advertising & Marketing Campaign Services",
+              "description": "Strategic advertising campaign development, creative advertising, digital marketing, campaign management, performance optimization, ROI tracking, and multi-channel advertising solutions",
+              "serviceType": "Advertising & Marketing",
+              "category": "Advertising"
+            },
+            "eligibleRegion": {
+              "@type": "Country",
+              "name": "India"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Social Media Marketing & Branding Services",
+              "description": "Strategic social media marketing, social media branding, content strategy, community management, influencer marketing, social media advertising, and engagement optimization",
+              "serviceType": "Social Media Marketing",
               "category": "Marketing"
             },
             "eligibleRegion": {
@@ -109,23 +123,9 @@ const AIFriendlyData = () => {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Social Media Marketing",
-              "description": "Social influence strategy, content strategy, community management, influencer partnerships, and social media advertising",
-              "serviceType": "Social Media",
-              "category": "Digital Marketing"
-            },
-            "eligibleRegion": {
-              "@type": "Country",
-              "name": "India"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Founder Credential Card",
-              "description": "Premium PVC founder credential card design and printing service. Custom brand identity cards representing entrepreneurial journey and brand story, delivered to your doorstep",
-              "serviceType": "Brand Identity Product",
+              "name": "Founder Credential Card Design Services",
+              "description": "Premium PVC founder credential card design and printing service. Custom-designed brand identity cards representing your entrepreneurial journey and brand story with professional printing and doorstep delivery",
+              "serviceType": "Brand Identity Design",
               "category": "Branding"
             },
             "eligibleRegion": {
@@ -148,18 +148,22 @@ const AIFriendlyData = () => {
         "name": "Kerala Creative Industry Network"
       },
       "knowsAbout": [
+        "Brand Design",
+        "Advertising Services",
         "Strategic Branding",
         "Brand Identity Design", 
         "Logo Design",
-        "Digital Marketing",
+        "Creative Advertising",
+        "Advertising Campaigns",
+        "Marketing Campaigns",
         "Social Media Marketing",
+        "Social Media Branding",
         "Influence Marketing",
         "Campaign Development",
         "Creative Design",
         "Brand Strategy",
         "Digital Advertising",
         "Content Marketing",
-        "SEO Services",
         "Graphic Design",
         "Marketing Consultation",
         "Brand Positioning",
@@ -167,22 +171,25 @@ const AIFriendlyData = () => {
         "Creative Direction",
         "Marketing Strategy",
         "Founder Credential Card Design",
-        "PVC Card Printing"
+        "Brand Identity Cards"
       ],
       "specialty": [
+        "Strategic brand design and identity",
+        "Creative advertising campaign development",
         "Influence-driven marketing campaigns",
         "Strategic brand positioning", 
-        "Freelance network coordination",
+        "Results-focused advertising solutions",
+        "Social media marketing and branding",
+        "Professional creative network coordination",
         "Cross-platform brand consistency",
         "ROI-focused marketing solutions",
-        "Kerala market expertise",
-        "Multi-language campaign development"
+        "Kerala market expertise"
       ],
       "awards": [
         {
           "@type": "Award",
-          "name": "Top Rated Creative Agency",
-          "description": "Recognized for excellence in branding and marketing services"
+          "name": "Top Rated Branding & Advertising Agency",
+          "description": "Recognized for excellence in strategic branding, creative advertising, and results-driven marketing solutions"
         }
       ],
       "aggregateRating": {
@@ -198,7 +205,7 @@ const AIFriendlyData = () => {
       "openingHours": "Mo-Fr 09:00-18:00",
       "availableLanguage": ["English", "Malayalam", "Hindi"],
       "slogan": "Designing Influence, Not Just Attention",
-      "mission": "To provide strategic branding and marketing solutions that create lasting influence and drive measurable business results through our curated network of creative professionals",
+      "mission": "To deliver strategic branding and advertising solutions that create lasting influence and drive measurable business results through our curated network of expert creative professionals",
       "foundingDate": "2020",
       "numberOfEmployees": "5-15",
       "sameAs": [

@@ -27,8 +27,9 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                Tired of agencies that make big promises but give you basic work? We fix this by connecting you with 
-                the right creative person for your project. No inexperienced staff, no learning on your time.
+                As a <strong className="text-brand-deep-blue">professional branding and advertising agency</strong>, we connect you with 
+                expert creative specialists who deliver exceptional brand identities, strategic advertising campaigns, and marketing solutions 
+                that drive real business growth. No junior staff, no compromises—just experienced professionals matched to your project.
               </p>
             </div>
             
@@ -38,8 +39,9 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                Frustrated with marketing that looks pretty but doesn't help your business? We focus on work that 
-                actually gets you customers and grows your business. Every design choice is made to help you reach your goals.
+                Our <strong className="text-brand-deep-blue">advertising and branding expertise</strong> focuses on creating campaigns that convert. 
+                We design strategic brand identities and advertising solutions that influence customer decisions, build brand authority, 
+                and deliver measurable ROI—not just visual appeal.
               </p>
             </div>
             
@@ -49,9 +51,10 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                Annoyed by slow agencies and expensive overhead? We work with skilled freelancers to give you 
-                the quality of a big agency but faster and cheaper. <strong className="text-brand-deep-blue">With our simple 25% 
-                fee, you get great work, fair pricing, and direct access to talented people</strong> without surprise costs.
+                Experience <strong className="text-brand-deep-blue">agency-level branding and advertising excellence</strong> with startup agility. 
+                Our curated network of creative professionals delivers premium brand design, advertising strategy, and marketing campaigns 
+                faster and more cost-effectively. <strong className="text-brand-deep-blue">Our transparent 25% fee structure</strong> ensures 
+                you receive top-tier branding and advertising services without expensive overhead or hidden costs.
               </p>
             </div>
           </div>
@@ -90,7 +93,7 @@ const About = () => {
             "mainEntity": {
               "@type": "Organization",
               "name": "Ad Atelier",
-              "description": "Creative design agency helping businesses look great and grow through teamwork with talented freelancers and smart marketing",
+              "description": "Premier branding and advertising agency in Kozhikode, Kerala delivering strategic brand design, creative advertising campaigns, and results-driven marketing solutions through expert creative professionals",
               "knowsAbout": [
                 "Strategic Branding",
                 "Digital Marketing",

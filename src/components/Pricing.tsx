@@ -14,23 +14,23 @@ const Pricing = () => {
     description: "Your 25% fee includes our promise that you'll be happy. If you're not satisfied with what we deliver, we'll fix it for free."
   }];
   const pricingExamples = [{
-    service: "Logo Design",
+    service: "Brand Identity Design",
     freelancerRate: "₹15,000",
     commission: "₹3,750",
     totalCost: "₹18,750",
-    description: "Complete brand identity package with 3 concepts and unlimited revisions"
+    description: "Complete brand identity package with logo design, 3 concepts and unlimited revisions"
   }, {
-    service: "Social Media Campaign",
+    service: "Advertising Campaign",
+    freelancerRate: "₹35,000",
+    commission: "₹8,750",
+    totalCost: "₹43,750",
+    description: "Full advertising campaign with creative development, strategy, and multi-channel execution"
+  }, {
+    service: "Social Media Marketing",
     freelancerRate: "₹25,000",
     commission: "₹6,250",
     totalCost: "₹31,250",
-    description: "30-day campaign strategy with content creation and performance monitoring"
-  }, {
-    service: "Website Design",
-    freelancerRate: "₹50,000",
-    commission: "₹12,500",
-    totalCost: "₹62,500",
-    description: "Responsive website design with UX optimization and mobile compatibility"
+    description: "30-day social media marketing campaign with content creation and performance monitoring"
   }];
   return <section 
     id="pricing" 

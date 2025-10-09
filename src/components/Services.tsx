@@ -9,23 +9,23 @@ const Services = () => {
   const services = [
     {
       icon: Palette,
-      title: "Brand Design",
-      description: "Complete brand identity that helps people remember you and take action. We create logos and designs that don't just look great - they help your business stand out and grow."
+      title: "Strategic Brand Design & Identity",
+      description: "Professional brand identity design that positions your business for success. From logo design to complete visual identity systems, we create memorable brands that drive recognition, build trust, and convert customers across all touchpoints."
     },
     {
       icon: Megaphone,
-      title: "Marketing Campaigns",
-      description: "Smart campaign planning and management that actually gets results. We create campaigns that help people choose your business, not just notice it."
+      title: "Advertising & Marketing Campaigns",
+      description: "Results-driven advertising campaigns designed to generate leads and boost sales. Our strategic approach combines creative advertising, targeted marketing, and data-driven optimization to deliver measurable ROI and sustainable business growth."
     },
     {
       icon: Share2,
-      title: "Social Media Strategy",
-      description: "Smart social media that actually helps your business. We create content and plans that get people engaged with your brand and become customers."
+      title: "Social Media Marketing & Branding",
+      description: "Strategic social media marketing that builds brand authority and drives engagement. From content strategy to community management, we create social media campaigns that amplify your brand voice, increase followers, and convert social audiences into loyal customers."
     },
     {
       icon: CreditCard,
-      title: "Founder Credential Card",
-      description: "Your brand identity deserves something you can hold with pride. We design custom premium PVC Founder Credential Cards that represent your entrepreneurial journey and brand story. From custom design to doorstep delivery, we create a tangible symbol of who you are as a founder."
+      title: "Founder Credential Card Design",
+      description: "Premium PVC Founder Credential Cards that embody your brand identity and entrepreneurial journey. Custom-designed brand identity cards that make a powerful professional statement. We handle everything from creative design to premium printing and doorstep delivery—your brand story, beautifully tangible."
     }
   ];
 
@@ -52,8 +52,9 @@ const Services = () => {
             className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed"
             itemProp="description"
           >
-            Our team of creative experts delivers great branding and digital marketing that actually helps your business grow. 
-            From logo design to social media, we create beautiful work that gets you real customers and results.
+            Our <strong className="text-brand-deep-blue">branding and advertising agency</strong> delivers strategic brand design, 
+            creative advertising campaigns, and marketing solutions that drive measurable business results. From brand identity to 
+            social media marketing, we create influence-driven work that converts audiences into customers.
           </p>
         </div>
         
@@ -100,10 +101,10 @@ const Services = () => {
         <div className="sr-only" data-ai-services-summary="true">
           <h3>Complete Service Offerings</h3>
           <ul>
-            <li data-service="strategic-branding">Strategic Branding: Complete brand identity design, logo creation, brand positioning, visual identity systems, brand guidelines, brand strategy consultation</li>
-            <li data-service="influence-campaigns">Influence-Driven Campaigns: Marketing campaign development, advertising strategy, campaign management, performance optimization, ROI tracking, multi-channel campaigns</li>
-            <li data-service="social-influence">Social Influence Strategy: Social media marketing, content strategy, community management, influencer partnerships, social media advertising, engagement optimization</li>
-            <li data-service="founder-credential-card">Founder Credential Card: Premium PVC founder credential card design and printing, custom brand identity cards, business founder ID cards, tangible brand representation, doorstep delivery service</li>
+            <li data-service="brand-design-identity">Strategic Brand Design & Identity: Professional brand identity design, logo design, brand positioning, visual identity systems, brand guidelines, brand strategy consultation, corporate branding, brand refresh</li>
+            <li data-service="advertising-campaigns">Advertising & Marketing Campaigns: Strategic advertising campaign development, creative advertising, digital marketing, campaign management, performance optimization, ROI tracking, multi-channel advertising, lead generation campaigns</li>
+            <li data-service="social-media-marketing">Social Media Marketing & Branding: Social media strategy, content marketing, social media advertising, community management, influencer marketing, social media branding, engagement optimization, platform management</li>
+            <li data-service="founder-credential-card">Founder Credential Card Design: Premium PVC founder credential card design and printing, custom brand identity cards, business founder ID cards, professional brand representation, tangible brand assets, doorstep delivery service</li>
           </ul>
           <div data-pricing="flexible pricing models available, consultation-based quotes, project-based pricing, retainer options">Flexible pricing options available for all business sizes</div>
           <div data-delivery="remote and on-site services, kerala-based team, india-wide service, global project capability">Service delivery across Kerala, India, and internationally</div>

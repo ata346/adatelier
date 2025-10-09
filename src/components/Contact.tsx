@@ -19,10 +19,10 @@ const Contact = () => {
   });
 
   const availableServices = [
-    "Strategic Branding",
-    "Influence-Driven Campaigns", 
-    "Social Influence Strategy",
-    "Founder Credential Card"
+    "Strategic Brand Design & Identity",
+    "Advertising & Marketing Campaigns", 
+    "Social Media Marketing & Branding",
+    "Founder Credential Card Design"
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -96,9 +96,9 @@ const Contact = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            Ready to work with us? Let's discuss your project and assemble the perfect team of creative 
-            specialists to bring your vision to life. Contact Ad Atelier today for strategic brand design 
-            and digital marketing solutions that drive real results.
+            Ready to elevate your brand? Let's discuss your branding and advertising needs. Our team of expert 
+            creative specialists will deliver strategic brand design, creative advertising campaigns, and marketing 
+            solutions that drive measurable results. Contact Ad Atelier—your trusted branding and advertising agency.
           </p>
         </div>
         
@@ -110,7 +110,8 @@ const Contact = () => {
                 Let's Start a Conversation
               </h3>
               <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70 mb-6 sm:mb-8 leading-relaxed">
-                Ready to design influence, not just attention? Let's assemble the perfect team of specialists for your project and create something that truly makes an impact.
+                Ready to build a brand that creates influence? Our branding and advertising agency will assemble expert specialists 
+                to deliver strategic branding, creative advertising, and marketing solutions that transform your business.
               </p>
             </div>
             

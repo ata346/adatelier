@@ -10,9 +10,9 @@ interface SEOHeadProps {
 }
 
 const SEOHead = ({ 
-  title = "Best Branding Agency Near Me | Ad Atelier Kozhikode - Strategic Brand Design & Digital Marketing",
-  description = "Top-rated branding agency in Kozhikode, Kerala specializing in strategic brand design, digital marketing campaigns, social media branding, and creative solutions. Expert freelance network delivering measurable results for businesses across India. Contact us today for professional branding services.",
-  keywords = "best branding agency near me, branding agency kozhikode, digital marketing kerala, brand design agency, social media marketing kozhikode, creative agency kerala, advertising agency ulliyeri, brand strategy consultants, logo design kozhikode, marketing agency kerala, freelance creative network, influence marketing agency, graphic design kozhikode, brand identity design, founder credential card, PVC founder card, business founder ID card",
+  title = "Leading Branding & Advertising Agency in Kozhikode | Ad Atelier - Strategic Brand Design & Creative Advertising",
+  description = "Premier branding and advertising agency in Kozhikode, Kerala delivering strategic brand design, creative advertising campaigns, social media marketing, and results-driven marketing solutions. Award-winning branding agency helping businesses across India build influential brands. Contact Ad Atelier for professional branding and advertising services.",
+  keywords = "branding agency kozhikode, advertising agency kerala, brand design agency, branding and advertising services, creative advertising agency, marketing agency kozhikode, brand identity design, advertising campaign management, social media marketing agency, logo design kozhikode, brand strategy consultants, digital advertising kerala, creative branding solutions, marketing consultancy india, founder credential card, business branding services, advertising agency ulliyeri",
   canonical = "https://ad-atelier.com/",
   type = "website",
   image = "/lovable-uploads/d7b2780c-4663-4385-a815-82bb418fb3f8.png"

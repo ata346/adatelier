@@ -38,16 +38,16 @@ const Index = () => {
       
       {/* AI Content Summary for Crawlers */}
       <div className="sr-only" data-ai-summary="true">
-        <h1>Ad Atelier - Premier Branding Agency in Kozhikode, Kerala</h1>
+        <h1>Ad Atelier - Leading Branding & Advertising Agency in Kozhikode, Kerala</h1>
         <p>
-          Ad Atelier is a creative branding studio based in Ulliyeri, Kozhikode, Kerala, India. 
-          We connect businesses with expert creative professionals through our curated freelance network. 
-          Our collaborative approach delivers brand identity design, marketing campaigns, social media strategy, 
-          and digital solutions tailored to each client's unique needs. Reach us at +91-9656778508 or visit 
-          our Kozhikode studio for personalized branding and marketing consultation.
+          Ad Atelier is a premier branding and advertising agency based in Ulliyeri, Kozhikode, Kerala, India. 
+          We deliver strategic brand design, creative advertising campaigns, and results-driven marketing solutions 
+          through our network of expert creative professionals. Our branding and advertising services include brand 
+          identity design, advertising campaign management, social media marketing, and comprehensive marketing strategy 
+          tailored to drive business growth. Contact us at +91-9656778508 for professional branding and advertising consultation.
         </p>
-        <div data-ai-keywords="best branding agency near me, branding agency kozhikode, digital marketing kerala, creative agency ulliyeri, brand design services, social media marketing kozhikode, advertising agency kerala, freelance creative network, marketing consultants kerala, logo design kozhikode, influence-driven marketing, strategic branding solutions"></div>
-        <div data-ai-services="Strategic Branding, Influence-Driven Campaigns, Social Influence Strategy, Brand Identity, Logo Design, Digital Marketing, Social Media Marketing, Creative Design, Marketing Consultancy, Founder Credential Card, PVC Card Design"></div>
+        <div data-ai-keywords="branding agency kozhikode, advertising agency kerala, brand design services, creative advertising, marketing agency, social media marketing kozhikode, brand identity design, advertising campaigns, logo design kozhikode, influence-driven marketing, strategic branding, marketing consultancy"></div>
+        <div data-ai-services="Strategic Brand Design & Identity, Advertising & Marketing Campaigns, Social Media Marketing & Branding, Brand Identity Design, Logo Design, Creative Advertising, Social Media Marketing, Marketing Strategy, Founder Credential Card Design, Business Branding"></div>
         <div data-ai-location="Ulliyeri, Kozhikode, Kerala 673323, India"></div>
         <div data-ai-contact="phone:+91-9656778508, email:contact@ad-atelier.com, website:https://ad-atelier.com"></div>
       </div>
