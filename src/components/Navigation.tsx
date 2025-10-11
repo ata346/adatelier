@@ -36,8 +36,10 @@ const Navigation = () => {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-elegant' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled 
+          ? 'bg-background/98 backdrop-blur-lg shadow-elegant border-b border-brand-light-gray/20' 
+          : 'bg-gradient-to-b from-brand-white/80 via-brand-white/40 to-transparent backdrop-blur-sm'
       }`}
       role="navigation"
       aria-label="Main navigation for Ad Atelier branding agency"
@@ -45,10 +47,10 @@ const Navigation = () => {
       itemType="https://schema.org/SiteNavigationElement"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-14 sm:h-16">
+        <div className="flex justify-between items-center h-16 sm:h-18 md:h-20">
           {/* Logo */}
           <div 
-            className="font-brand-heading text-lg xs:text-xl sm:text-2xl gradient-text cursor-pointer touch-manipulation tap-highlight-transparent"
+            className="font-brand-heading text-xl xs:text-2xl sm:text-3xl gradient-text cursor-pointer touch-manipulation tap-highlight-transparent transition-transform duration-300 hover:scale-105"
             onClick={() => scrollToSection("#home")}
             role="button"
             tabIndex={0}
@@ -64,11 +66,11 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="font-brand-body text-sm xl:text-base text-brand-dark-navy hover:text-brand-deep-blue transition-colors duration-300 relative group whitespace-nowrap"
+                className="font-brand-body text-sm xl:text-base text-brand-dark-navy hover:text-brand-deep-blue transition-all duration-300 relative group whitespace-nowrap hover:-translate-y-0.5"
                 aria-label={`Navigate to ${item.name} section`}
               >
                 {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-deep-blue transition-all duration-300 group-hover:w-full" aria-hidden="true"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-deep-blue to-brand-mid-blue transition-all duration-300 group-hover:w-full" aria-hidden="true"></span>
               </button>
             ))}
             <Button 
@@ -97,14 +99,14 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 z-50">
-            <div className="mx-4 mt-2 bg-background/98 backdrop-blur-md rounded-xl shadow-elegant border border-brand-light-gray/50">
-              <div className="py-2 space-y-1">
+          <div className="lg:hidden absolute top-full left-0 right-0 z-50 animate-fade-in">
+            <div className="mx-4 mt-2 bg-background/98 backdrop-blur-lg rounded-2xl shadow-hover border border-brand-light-gray/50">
+              <div className="py-3 space-y-1">
                 {navItems.map((item) => (
                   <button
                     key={item.name}
                     onClick={() => scrollToSection(item.href)}
-                    className="block w-full text-left px-4 py-3 font-brand-body text-sm text-brand-dark-navy hover:text-brand-deep-blue hover:bg-brand-light-gray/30 transition-colors duration-300 touch-manipulation tap-highlight-transparent min-h-[44px] flex items-center"
+                    className="block w-full text-left px-5 py-4 font-brand-body text-base text-brand-dark-navy hover:text-brand-deep-blue hover:bg-gradient-to-r hover:from-brand-light-gray/40 hover:to-transparent transition-all duration-300 touch-manipulation tap-highlight-transparent min-h-[48px] flex items-center rounded-lg"
                   >
                     {item.name}
                   </button>

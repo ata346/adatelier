@@ -80,29 +80,29 @@ const Contact = () => {
   return (
     <section 
       id="contact" 
-      className="py-12 sm:py-16 md:py-20 bg-brand-light-gray/30"
+      className="py-16 sm:py-20 md:py-24 lg:py-28 bg-brand-light-gray/30"
       aria-labelledby="contact-heading"
       itemScope
       itemType="https://schema.org/ContactPage"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <h2 
             id="contact-heading"
-            className="font-brand-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-brand-dark-navy px-2 sm:px-4 leading-tight"
+            className="font-brand-heading text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 md:mb-8 text-brand-dark-navy px-2 sm:px-4 leading-tight"
             itemProp="name"
           >
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
-          <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
+          <div className="w-20 sm:w-32 h-1.5 bg-gradient-to-r from-brand-deep-blue via-brand-mid-blue to-brand-deep-blue mx-auto mb-6 sm:mb-8 md:mb-10 rounded-full"></div>
+          <p className="font-brand-body text-base sm:text-lg md:text-xl text-brand-dark-navy/80 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
             Ready to elevate your brand? Let's discuss your branding and advertising needs. Our team of expert 
             creative specialists will deliver strategic brand design, creative advertising campaigns, and marketing 
             solutions that drive measurable results. Contact Ad Atelier—your trusted branding and advertising agency.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16">
           {/* Contact Information */}
           <div className="space-y-4 sm:space-y-6 md:space-y-8 order-2 lg:order-1 px-2 sm:px-0">
             <div>
@@ -174,11 +174,11 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <div className="bg-background rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant order-1 lg:order-2">
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          <div className="bg-background rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-elegant hover:shadow-hover transition-all duration-500 order-1 lg:order-2 border border-brand-light-gray/20">
+            <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-7">
+              <div className="grid grid-cols-1 gap-5 sm:gap-6">
                 <div>
-                  <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-2 block">
+                  <label className="font-brand-body text-sm sm:text-base font-semibold text-brand-dark-navy mb-2.5 block">
                     Name *
                   </label>
                   <Input
@@ -187,11 +187,11 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your full name"
                     required
-                    className="font-brand-body text-sm sm:text-base h-10 sm:h-11"
+                    className="font-brand-body text-base sm:text-lg h-12 sm:h-14 transition-all duration-300 focus:shadow-elegant"
                   />
                 </div>
                 <div>
-                  <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-2 block">
+                  <label className="font-brand-body text-sm sm:text-base font-semibold text-brand-dark-navy mb-2.5 block">
                     Phone
                   </label>
                   <Input
@@ -199,29 +199,29 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Your phone number"
-                    className="font-brand-body text-sm sm:text-base h-10 sm:h-11"
+                    className="font-brand-body text-base sm:text-lg h-12 sm:h-14 transition-all duration-300 focus:shadow-elegant"
                   />
                 </div>
               </div>
               
               <div>
-                <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-3 block">
+                <label className="font-brand-body text-sm sm:text-base font-semibold text-brand-dark-navy mb-3.5 block">
                   Services Interested In
                 </label>
-                <div className="grid grid-cols-1 gap-2 sm:gap-3">
+                <div className="grid grid-cols-1 gap-3 sm:gap-4">
                   {availableServices.map((service) => (
-                    <div key={service} className="flex items-start space-x-2 p-2 sm:p-0">
+                    <div key={service} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-brand-light-gray/30 transition-all duration-300">
                       <Checkbox
                         id={service}
                         checked={formData.services.includes(service)}
                         onCheckedChange={(checked) => 
                           handleServiceChange(service, checked as boolean)
                         }
-                        className="mt-0.5 sm:mt-0"
+                        className="mt-0.5"
                       />
                       <Label 
                         htmlFor={service} 
-                        className="font-brand-body text-xs sm:text-sm text-brand-dark-navy cursor-pointer leading-relaxed flex-1"
+                        className="font-brand-body text-sm sm:text-base text-brand-dark-navy cursor-pointer leading-relaxed flex-1"
                       >
                         {service}
                       </Label>
@@ -231,7 +231,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-2 block">
+                <label className="font-brand-body text-sm sm:text-base font-semibold text-brand-dark-navy mb-2.5 block">
                   Budget Range
                 </label>
                 <Input
@@ -239,12 +239,12 @@ const Contact = () => {
                   value={formData.budget}
                   onChange={handleChange}
                   placeholder="e.g., $5,000 - $10,000"
-                  className="font-brand-body text-sm sm:text-base h-10 sm:h-11"
+                  className="font-brand-body text-base sm:text-lg h-12 sm:h-14 transition-all duration-300 focus:shadow-elegant"
                 />
               </div>
               
               <div>
-                <label className="font-brand-body text-xs sm:text-sm font-medium text-brand-dark-navy mb-2 block">
+                <label className="font-brand-body text-sm sm:text-base font-semibold text-brand-dark-navy mb-2.5 block">
                   Message *
                 </label>
                 <Textarea
@@ -252,19 +252,19 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Tell us about your project..."
-                  rows={4}
+                  rows={5}
                   required
-                  className="font-brand-body resize-none text-sm sm:text-base min-h-[100px] sm:min-h-[120px]"
+                  className="font-brand-body resize-none text-base sm:text-lg min-h-[140px] sm:min-h-[160px] transition-all duration-300 focus:shadow-elegant"
                 />
               </div>
               
               <Button
                 type="submit"
                 variant="contact"
-                className="w-full group h-11 sm:h-12 text-sm sm:text-base"
+                className="w-full group h-14 sm:h-16 text-base sm:text-lg font-semibold shadow-elegant hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
               >
                 Send Message
-                <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                <Send className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-all duration-300" />
               </Button>
             </form>
           </div>

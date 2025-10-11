@@ -22,8 +22,13 @@ All colors MUST be HSL.
     --gradient-hero: linear-gradient(180deg, hsl(var(--brand-white)) 0%, hsl(var(--brand-light-gray)) 100%);
     
     /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-deep-blue) / 0.2);
-    --shadow-glow: 0 0 40px hsl(var(--brand-mid-blue) / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-deep-blue) / 0.25);
+    --shadow-glow: 0 0 40px hsl(var(--brand-mid-blue) / 0.4);
+    --shadow-hover: 0 15px 40px -10px hsl(var(--brand-deep-blue) / 0.35);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     
     /* Core Design System */
     --background: var(--brand-white);
@@ -261,6 +266,18 @@ All colors MUST be HSL.
 
   .shadow-glow {
     box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
   }
 
   .story-link {

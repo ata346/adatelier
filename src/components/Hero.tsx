@@ -23,18 +23,18 @@ const Hero = () => {
         aria-hidden="true" 
       />
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 sm:py-24">
-        <header className="animate-fade-in">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16 sm:py-20 md:py-24 lg:py-28">
+        <header className="animate-fade-in space-y-6 sm:space-y-8 md:space-y-10">
           <h1 
             id="hero-heading"
-            className="font-brand-heading text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 gradient-text tracking-tight leading-tight px-2"
+            className="font-brand-heading text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 sm:mb-8 gradient-text tracking-tight leading-[1.1] px-2"
             itemProp="name"
           >
             Ad Atelier
           </h1>
           
           <h2 
-            className="font-brand-body text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-brand-dark-navy mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"
+            className="font-brand-body text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-brand-dark-navy/90 mb-10 sm:mb-12 md:mb-14 max-w-5xl mx-auto leading-relaxed px-2 sm:px-4"
             itemProp="slogan"
           >
             Premier Branding & Advertising Agency — Designing Influence, Not Just Attention
@@ -52,11 +52,11 @@ const Hero = () => {
             variant="hero" 
             size="lg" 
             onClick={scrollToContact} 
-            className="text-sm xs:text-base md:text-lg px-4 xs:px-6 md:px-8 py-3 md:py-4 group w-auto min-w-[140px] sm:min-w-[160px]"
+            className="text-base xs:text-lg md:text-xl px-6 xs:px-8 md:px-10 py-4 md:py-5 group w-auto min-w-[160px] sm:min-w-[200px] shadow-elegant hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
             aria-label="Get started with Ad Atelier - Contact us for branding and marketing services"
           >
             Get Started
-            <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true" />
+            <ArrowRight className="ml-2 w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-all duration-300" aria-hidden="true" />
           </Button>
         </header>
       </div>
