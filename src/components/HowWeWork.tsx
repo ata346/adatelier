@@ -5,27 +5,27 @@ const HowWeWork = () => {
     {
       icon: Search,
       title: "Step 1: Choose Your Service",
-      description: "Pick the service that fits your needs perfectly."
+      description: "Browse our comprehensive service offerings including Strategic Brand Design, Advertising Campaigns, Social Media Marketing, and Founder Credential Cards. Select the service that aligns with your business goals and budget. Each service is designed to deliver measurable results and drive real business growth."
     },
     {
       icon: Users,
       title: "Step 2: Book Your Team",
-      description: "Handpick a skilled team to handle your project with ease."
+      description: "We carefully match you with expert creative specialists from our curated network. Your dedicated team is hand-selected based on your industry, project requirements, and objectives. No junior staff—only experienced professionals with proven track records in branding and advertising excellence."
     },
     {
       icon: FileText,
       title: "Step 3: Share Your Brief",
-      description: "Provide all the details and requirements to ensure we deliver exactly what you want."
+      description: "Submit your detailed project requirements through our streamlined briefing process. Include your brand vision, target audience, competitors, timeline, and budget. Our team reviews your brief and schedules a consultation call to clarify objectives and ensure complete alignment before work begins."
     },
     {
       icon: CheckCircle,
       title: "Step 4: Review the Work",
-      description: "Check the results, give feedback, and ensure it meets your expectations."
+      description: "Receive initial concepts and designs for your review. Provide detailed feedback through our collaborative review platform. Your assigned team implements revisions promptly, ensuring every deliverable meets your standards. We include multiple revision rounds to guarantee your complete satisfaction with the final output."
     },
     {
       icon: Sparkles,
       title: "Step 5: Done!",
-      description: "Sit back and relax as your project comes to life seamlessly."
+      description: "Receive your final deliverables in all required formats along with comprehensive brand guidelines or campaign documentation. We provide ongoing support for 30 days post-delivery and remain available for future projects. Your brand assets are ready to drive influence, engagement, and measurable business results."
     }
   ];
 
@@ -62,7 +62,7 @@ const HowWeWork = () => {
                   itemType="https://schema.org/HowToStep"
                   itemProp="step"
                 >
-                  <div className="bg-brand-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-elegant hover:shadow-hover transition-all duration-500 hover:-translate-y-1 border border-brand-mid-blue/10 h-full flex flex-col min-h-[280px] xs:min-h-[320px] sm:min-h-[300px]">
+                  <div className="bg-brand-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-elegant hover:shadow-hover transition-all duration-500 hover:-translate-y-1 border border-brand-mid-blue/10 h-full flex flex-col min-h-[320px] xs:min-h-[360px] sm:min-h-[340px]">
                     <div className="w-12 xs:w-14 sm:w-16 h-12 xs:h-14 sm:h-16 bg-gradient-to-br from-brand-mid-blue to-brand-deep-blue rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                       <IconComponent className="w-6 xs:w-7 sm:w-8 h-6 xs:h-7 sm:h-8 text-brand-white" />
                     </div>
@@ -73,7 +73,7 @@ const HowWeWork = () => {
                       {step.title}
                     </h4>
                     <p 
-                      className="font-brand-body text-xs xs:text-sm sm:text-sm md:text-base text-brand-dark-navy/70 leading-relaxed flex-grow"
+                      className="font-brand-body text-xs xs:text-sm sm:text-base text-brand-dark-navy/70 leading-relaxed flex-grow"
                       itemProp="text"
                     >
                       {step.description}

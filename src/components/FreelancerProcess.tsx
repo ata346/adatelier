@@ -5,27 +5,27 @@ const FreelancerProcess = () => {
     {
       icon: Search,
       title: "Step 1: Pick Your Projects",
-      description: "Choose projects that match your skills and interests—work you'll enjoy and excel at."
+      description: "Browse available projects across brand design, advertising, social media, and marketing. Filter by your expertise, preferred budget range, and timeline. Select projects that align with your skills and creative interests. You're in control—choose work you'll genuinely enjoy and excel at delivering."
     },
     {
       icon: Users,
       title: "Step 2: Join the Team",
-      description: "Get matched with a skilled team that complements your expertise and helps deliver outstanding results."
+      description: "Get matched with complementary creative professionals who enhance your work. Collaborate with strategists, designers, copywriters, and marketers who share your commitment to quality. Our team structure ensures seamless collaboration, clear communication, and outstanding results for every client project."
     },
     {
       icon: FileText,
       title: "Step 3: Receive the Brief",
-      description: "Access clear project requirements so you know exactly what's expected."
+      description: "Access comprehensive project briefs including client objectives, target audience, brand guidelines, deliverable formats, timeline, and budget. Attend kickoff meetings to clarify expectations and ask questions. All project requirements are clearly documented to ensure you have everything needed for success."
     },
     {
       icon: CheckCircle,
       title: "Step 4: Submit Your Work",
-      description: "Deliver your contribution, receive feedback, and ensure your work shines."
+      description: "Upload your deliverables through our secure platform for quality review. Receive constructive feedback from our project managers and implement revisions as needed. Your work undergoes thorough quality checks before client presentation. We support you throughout the revision process to ensure excellence."
     },
     {
       icon: DollarSign,
       title: "Step 5: Get Paid & Move On",
-      description: "Complete projects seamlessly, get paid promptly, and keep building your portfolio stress-free."
+      description: "Receive 75% of the project fee directly to your account upon project completion—we take only 25% for client acquisition, project management, and quality assurance. Get paid within 5 business days. Build your portfolio with high-quality work and establish long-term client relationships through our platform."
     }
   ];
 
@@ -64,7 +64,7 @@ const FreelancerProcess = () => {
                   itemType="https://schema.org/HowToStep"
                   itemProp="step"
                 >
-                  <div className="bg-brand-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-elegant hover:shadow-hover transition-all duration-500 hover:-translate-y-1 border border-brand-mid-blue/10 h-full flex flex-col min-h-[280px] xs:min-h-[320px] sm:min-h-[300px]">
+                  <div className="bg-brand-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-elegant hover:shadow-hover transition-all duration-500 hover:-translate-y-1 border border-brand-mid-blue/10 h-full flex flex-col min-h-[320px] xs:min-h-[360px] sm:min-h-[340px]">
                     <div className="w-12 xs:w-14 sm:w-16 h-12 xs:h-14 sm:h-16 bg-gradient-to-br from-brand-mid-blue to-brand-deep-blue rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                       <IconComponent className="w-6 xs:w-7 sm:w-8 h-6 xs:h-7 sm:h-8 text-brand-white" />
                     </div>
@@ -75,7 +75,7 @@ const FreelancerProcess = () => {
                       {step.title}
                     </h4>
                     <p 
-                      className="font-brand-body text-xs xs:text-sm sm:text-sm md:text-base text-brand-dark-navy/70 leading-relaxed flex-grow"
+                      className="font-brand-body text-xs xs:text-sm sm:text-base text-brand-dark-navy/70 leading-relaxed flex-grow"
                       itemProp="text"
                     >
                       {step.description}
