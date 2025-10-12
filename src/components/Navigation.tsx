@@ -77,9 +77,9 @@ const Navigation = () => {
               variant="hero" 
               size="sm"
               onClick={() => scrollToSection("#contact")}
-              aria-label="Get a free quote for branding and marketing services"
+              aria-label="Hire us for branding and marketing services"
             >
-              Get Quote
+              Hire us
             </Button>
           </div>
 
@@ -118,7 +118,7 @@ const Navigation = () => {
                     onClick={() => scrollToSection("#contact")}
                     className="w-full min-h-[44px] touch-manipulation tap-highlight-transparent"
                   >
-                    Get Quote
+                    Hire us
                   </Button>
                 </div>
               </div>
