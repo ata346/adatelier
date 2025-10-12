@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
   return (
     <section 
       id="why-choose-us" 
-      className="py-12 sm:py-16 md:py-20 bg-brand-light-gray/30"
+      className="py-16 sm:py-20 md:py-24 lg:py-28 bg-brand-light-gray/30"
       aria-labelledby="why-choose-heading"
       itemScope
       itemType="https://schema.org/ItemList"
@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
           {reasons.map((reason, index) => (
             <article 
               key={index}
-              className="group bg-background rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2"
+              className="group bg-background rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-elegant hover:shadow-hover transition-all duration-500 hover:-translate-y-2 border border-brand-light-gray/20"
               itemScope
               itemType="https://schema.org/ListItem"
               itemProp="itemListElement"

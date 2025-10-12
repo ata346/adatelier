@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section 
       id="about" 
-      className="py-12 sm:py-16 md:py-20 bg-background"
+      className="py-16 sm:py-20 md:py-24 lg:py-28 bg-background"
       aria-labelledby="about-heading"
       itemScope
       itemType="https://schema.org/AboutPage"

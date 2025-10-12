@@ -32,7 +32,7 @@ const HowWeWork = () => {
   return (
     <section 
       id="how-we-work" 
-      className="py-12 sm:py-16 md:py-20 bg-secondary/20"
+      className="py-16 sm:py-20 md:py-24 lg:py-28 bg-secondary/20"
       aria-labelledby="how-we-work-heading"
       itemScope
       itemType="https://schema.org/HowTo"
@@ -62,7 +62,7 @@ const HowWeWork = () => {
                   itemType="https://schema.org/HowToStep"
                   itemProp="step"
                 >
-                  <div className="bg-brand-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant hover:shadow-glow transition-all duration-300 border border-brand-mid-blue/10 h-full flex flex-col min-h-[280px] xs:min-h-[320px] sm:min-h-[300px]">
+                  <div className="bg-brand-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-elegant hover:shadow-hover transition-all duration-500 hover:-translate-y-1 border border-brand-mid-blue/10 h-full flex flex-col min-h-[280px] xs:min-h-[320px] sm:min-h-[300px]">
                     <div className="w-12 xs:w-14 sm:w-16 h-12 xs:h-14 sm:h-16 bg-gradient-to-br from-brand-mid-blue to-brand-deep-blue rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                       <IconComponent className="w-6 xs:w-7 sm:w-8 h-6 xs:h-7 sm:h-8 text-brand-white" />
                     </div>

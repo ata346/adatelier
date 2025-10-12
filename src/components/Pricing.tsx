@@ -34,7 +34,7 @@ const Pricing = () => {
   }];
   return <section 
     id="pricing" 
-    className="py-12 sm:py-16 md:py-20 bg-background"
+    className="py-16 sm:py-20 md:py-24 lg:py-28 bg-background"
     aria-labelledby="pricing-heading"
     itemScope
     itemType="https://schema.org/PriceSpecification"
@@ -84,10 +84,10 @@ const Pricing = () => {
             What Your 25% Fee Includes
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            {pricingFeatures.map((feature, index) => <article 
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+              {pricingFeatures.map((feature, index) => <article 
               key={index} 
-              className="group bg-brand-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-1 border border-brand-mid-blue/10"
+              className="group bg-brand-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-elegant hover:shadow-hover transition-all duration-500 hover:-translate-y-2 border border-brand-mid-blue/10"
               itemScope
               itemType="https://schema.org/Offer"
             >

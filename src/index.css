@@ -22,9 +22,10 @@ All colors MUST be HSL.
     --gradient-hero: linear-gradient(180deg, hsl(var(--brand-white)) 0%, hsl(var(--brand-light-gray)) 100%);
     
     /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-deep-blue) / 0.25);
-    --shadow-glow: 0 0 40px hsl(var(--brand-mid-blue) / 0.4);
-    --shadow-hover: 0 15px 40px -10px hsl(var(--brand-deep-blue) / 0.35);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-deep-blue) / 0.15);
+    --shadow-glow: 0 0 40px hsl(var(--brand-mid-blue) / 0.2);
+    --shadow-hover: 0 20px 50px -15px hsl(var(--brand-deep-blue) / 0.25);
+    --shadow-focus: 0 0 0 3px hsl(var(--brand-deep-blue) / 0.1);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
