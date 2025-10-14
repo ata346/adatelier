@@ -15,7 +15,7 @@ const Footer = () => {
             <h3 className="font-brand-heading text-xl sm:text-2xl gradient-text">
               Ad Atelier
             </h3>
-            <p className="font-brand-body text-brand-white/70 text-xs sm:text-sm leading-relaxed">Designing Influence, Not Just Attention</p>
+            <p className="font-brand-body text-brand-white/70 text-xs sm:text-sm leading-relaxed">Building Brand Influence That Converts</p>
           </div>
 
           {/* Quick Links */}

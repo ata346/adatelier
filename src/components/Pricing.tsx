@@ -2,16 +2,16 @@ import { Calculator, TrendingUp, Shield, CheckCircle } from "lucide-react";
 const Pricing = () => {
   const pricingFeatures = [{
     icon: Calculator,
-    title: "Simple 25% Fee",
-    description: "Pay what the freelancer charges plus our 25% fee. No hidden costs, no surprise bills, no complicated pricing."
+    title: "Transparent 25% Fee Structure",
+    description: "You see exactly what the creative professional charges. We add just 25% for sourcing elite talent, managing projects, ensuring quality, and guaranteeing results. No hidden hourly rates, no inflated retainers, no billing surprises—just honest pricing that respects your budget and intelligence."
   }, {
     icon: TrendingUp,
-    title: "Value-Based Pricing",
-    description: "Our fee covers managing the project, checking quality, keeping you updated, and making sure everything gets done right - so you get great results."
+    title: "Premium Value, Fair Investment",
+    description: "Your 25% fee delivers exceptional value: access to senior specialists (not juniors), dedicated project management, multi-round quality reviews, on-time delivery guarantees, and unlimited communication. You get agency-level excellence at freelance-level economics—typically 40-60% lower than traditional agencies."
   }, {
     icon: Shield,
-    title: "Risk-Free Guarantee",
-    description: "Your 25% fee includes our promise that you'll be happy. If you're not satisfied with what we deliver, we'll fix it for free."
+    title: "Satisfaction Guaranteed, Risk Eliminated",
+    description: "Your 25% fee includes our iron-clad satisfaction guarantee. Deliverables don't meet expectations? We revise until they do—at no additional cost. Unsatisfied after revisions? We refund your fee, no questions asked. We only succeed when you succeed, aligning our interests completely with yours."
   }];
   const pricingExamples = [{
     service: "Brand Identity Design",
@@ -50,8 +50,9 @@ const Pricing = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            No complicated pricing or hidden fees. Our simple <strong className="text-brand-deep-blue">25% fee</strong> 
-            means you always know exactly what you're paying.
+            <strong className="text-brand-deep-blue">Radical transparency in branding and advertising pricing</strong>. Unlike traditional agencies 
+            hiding costs in retainers and hourly rates, we show you exactly what the creative professional charges, then add just 25% for assembling 
+            your expert team, managing quality, and guaranteeing satisfaction. Zero surprises, zero hidden fees, total clarity.
           </p>
         </div>
 

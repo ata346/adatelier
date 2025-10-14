@@ -27,9 +27,10 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                As a <strong className="text-brand-deep-blue">professional branding and advertising agency</strong>, we connect you with 
-                expert creative specialists who deliver exceptional brand identities, strategic advertising campaigns, and marketing solutions 
-                that drive real business growth. No junior staff, no compromises—just experienced professionals matched to your project.
+                <strong className="text-brand-deep-blue">Ad Atelier is Kerala's leading on-demand branding and advertising agency</strong>, connecting ambitious 
+                businesses with elite creative specialists who craft brands that influence customer decisions and drive measurable revenue growth. Unlike traditional 
+                agencies with inflated overhead, we assemble expert teams—senior brand designers, advertising strategists, and marketing professionals—matched 
+                precisely to your industry, objectives, and budget. Every project gets experienced talent, never juniors learning on your investment.
               </p>
             </div>
             
@@ -39,9 +40,10 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                Our <strong className="text-brand-deep-blue">advertising and branding expertise</strong> focuses on creating campaigns that convert. 
-                We design strategic brand identities and advertising solutions that influence customer decisions, build brand authority, 
-                and deliver measurable ROI—not just visual appeal.
+                Our <strong className="text-brand-deep-blue">influence-first branding philosophy</strong> rejects superficial design that generates 
+                fleeting attention. Instead, we architect strategic brand identities and advertising campaigns engineered to shape customer perception, 
+                command market authority, and generate quantifiable business outcomes—increased conversion rates, elevated average order values, 
+                stronger customer loyalty, and sustainable competitive advantage. Beautiful design is our baseline; business transformation is our benchmark.
               </p>
             </div>
             
@@ -51,10 +53,12 @@ const About = () => {
                 className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/80 leading-relaxed"
                 itemProp="description"
               >
-                Experience <strong className="text-brand-deep-blue">agency-level branding and advertising excellence</strong> with startup agility. 
-                Our curated network of creative professionals delivers premium brand design, advertising strategy, and marketing campaigns 
-                faster and more cost-effectively. <strong className="text-brand-deep-blue">Our transparent 25% fee structure</strong> ensures 
-                you receive top-tier branding and advertising services without expensive overhead or hidden costs.
+                Experience the power of <strong className="text-brand-deep-blue">agency-caliber branding with startup speed and transparency</strong>. 
+                Our revolutionary on-demand model eliminates traditional agency bloat—no account managers billing hourly, no creative directors 
+                justifying retainers, no bureaucratic delays. You get <strong className="text-brand-deep-blue">direct access to senior specialists, 
+                faster project delivery (typically 40-60% quicker), and a transparent 25% fee</strong>—you know exactly what the creative professional 
+                charges, we add just 25% for sourcing talent, managing quality, and guaranteeing your satisfaction. Premium branding and advertising 
+                excellence, delivered with radical transparency and efficiency.
               </p>
             </div>
           </div>

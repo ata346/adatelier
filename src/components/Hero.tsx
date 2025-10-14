@@ -37,7 +37,7 @@ const Hero = () => {
             className="font-brand-body text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-brand-dark-navy/90 mb-10 sm:mb-12 md:mb-14 max-w-5xl mx-auto leading-relaxed px-2 sm:px-4"
             itemProp="slogan"
           >
-            Premier Branding & Advertising Agency — Designing Influence, Not Just Attention
+            Kerala's Premier Branding & Advertising Agency — We Design Brand Influence That Converts, Not Just Attention That Fades
           </h2>
           
           {/* Hidden description for AI */}

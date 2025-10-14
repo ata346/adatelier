@@ -47,9 +47,9 @@ const WhyChooseUs = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-brand-mid-blue mx-auto mb-4 sm:mb-6 md:mb-8"></div>
           <p className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            As a <strong className="text-brand-deep-blue">professional branding and advertising agency</strong>, we solve the 
-            common challenges businesses face with traditional agencies—delivering strategic branding, creative advertising, 
-            and marketing excellence with our <strong className="text-brand-deep-blue">transparent 25% fee structure</strong>.
+            <strong className="text-brand-deep-blue">Traditional agencies frustrate ambitious businesses</strong>—inflated fees, junior staff on critical projects, 
+            slow execution, and opaque pricing. Ad Atelier eliminates every pain point: <strong className="text-brand-deep-blue">senior specialists only, 
+            transparent 25% pricing, agile delivery, and guaranteed results</strong>. We deliver agency-caliber branding and advertising without agency-level waste.
           </p>
         </div>
         

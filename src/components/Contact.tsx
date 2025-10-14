@@ -96,9 +96,9 @@ const Contact = () => {
           </h2>
           <div className="w-20 sm:w-32 h-1.5 bg-gradient-to-r from-brand-deep-blue via-brand-mid-blue to-brand-deep-blue mx-auto mb-6 sm:mb-8 md:mb-10 rounded-full"></div>
           <p className="font-brand-body text-base sm:text-lg md:text-xl text-brand-dark-navy/80 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-            Ready to elevate your brand? Let's discuss your branding and advertising needs. Our team of expert 
-            creative specialists will deliver strategic brand design, creative advertising campaigns, and marketing 
-            solutions that drive measurable results. Contact Ad Atelier—your trusted branding and advertising agency.
+            <strong>Ready to build a brand that influences, not just attracts?</strong> Let's discuss how our elite creative specialists 
+            can deliver strategic branding, performance-driven advertising, and marketing solutions engineered to drive measurable business growth. 
+            Share your objectives below, and we'll assemble the perfect team to transform your brand into a revenue-generating competitive advantage.
           </p>
         </div>
         
@@ -110,8 +110,9 @@ const Contact = () => {
                 Let's Start a Conversation
               </h3>
               <p className="font-brand-body text-sm sm:text-base text-brand-dark-navy/70 mb-6 sm:mb-8 leading-relaxed">
-                Ready to build a brand that creates influence? Our branding and advertising agency will assemble expert specialists 
-                to deliver strategic branding, creative advertising, and marketing solutions that transform your business.
+                <strong>Let's build influence that converts.</strong> Share your branding or advertising challenge, and we'll match you with 
+                senior specialists who deliver strategic solutions—not just creative work, but business transformation. Projects typically 
+                start within 3-5 business days. Your brand's competitive advantage begins with this conversation.
               </p>
             </div>
             

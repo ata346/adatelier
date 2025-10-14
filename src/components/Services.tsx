@@ -10,22 +10,22 @@ const Services = () => {
     {
       icon: Palette,
       title: "Strategic Brand Design & Identity",
-      description: "Professional brand identity design that positions your business for success. From logo design to complete visual identity systems, we create memorable brands that drive recognition, build trust, and convert customers across all touchpoints."
+      description: "Transform your business into a commanding market presence with brand identities engineered for influence. We craft comprehensive visual systems—logos, typography, color psychology, brand guidelines—that position you as the premium choice in your category. Our strategic approach ensures every brand touchpoint reinforces customer confidence, elevates perceived value, and drives conversion rates 30-50% higher than generic branding."
     },
     {
       icon: Megaphone,
       title: "Advertising & Marketing Campaigns",
-      description: "Results-driven advertising campaigns designed to generate leads and boost sales. Our strategic approach combines creative advertising, targeted marketing, and data-driven optimization to deliver measurable ROI and sustainable business growth."
+      description: "Launch advertising campaigns that generate measurable business results, not just impressions. Our performance-focused approach combines psychological triggers, compelling creative, precise audience targeting, and continuous optimization to deliver qualified leads, increased sales velocity, and customer acquisition costs 25-40% below industry benchmarks. Every campaign is built on strategy, executed with creativity, and validated with data."
     },
     {
       icon: Share2,
       title: "Social Media Marketing & Branding",
-      description: "Strategic social media marketing that builds brand authority and drives engagement. From content strategy to community management, we create social media campaigns that amplify your brand voice, increase followers, and convert social audiences into loyal customers."
+      description: "Build social media presence that converts followers into revenue-generating customers. We architect content strategies that establish thought leadership, create authentic engagement, and systematically guide audiences from awareness to purchase. Our approach combines platform-specific expertise, viral-worthy creative, community cultivation, and conversion optimization to deliver follower growth, brand advocacy, and direct sales attribution that justify every rupee invested."
     },
     {
       icon: CreditCard,
       title: "Founder Credential Card Design",
-      description: "Premium PVC Founder Credential Cards that embody your brand identity and entrepreneurial journey. Custom-designed brand identity cards that make a powerful professional statement. We handle everything from creative design to premium printing and doorstep delivery—your brand story, beautifully tangible."
+      description: "Command instant credibility with premium Founder Credential Cards that position you as a serious business leader. These aren't standard business cards—they're tangible brand statements crafted from premium PVC with sophisticated design that communicates authority, professionalism, and founder-level status. Custom-designed to embody your personal brand and entrepreneurial journey, delivered ready to make powerful first impressions. From concept to premium printing to doorstep delivery—we handle everything."
     }
   ];
 
@@ -52,9 +52,10 @@ const Services = () => {
             className="font-brand-body text-sm sm:text-base md:text-lg text-brand-dark-navy/70 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed"
             itemProp="description"
           >
-            Our <strong className="text-brand-deep-blue">branding and advertising agency</strong> delivers strategic brand design, 
-            creative advertising campaigns, and marketing solutions that drive measurable business results. From brand identity to 
-            social media marketing, we create influence-driven work that converts audiences into customers.
+            <strong className="text-brand-deep-blue">Ad Atelier specializes in building brands that influence customer decisions and drive measurable revenue</strong>. 
+            Our comprehensive services combine strategic thinking, creative excellence, and performance optimization to deliver branding and advertising 
+            solutions that don't just capture attention—they command influence, convert customers, and generate sustainable competitive advantage for 
+            businesses across Kerala and beyond.
           </p>
         </div>
         
