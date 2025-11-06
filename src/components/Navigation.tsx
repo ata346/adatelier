@@ -22,11 +22,14 @@ const Navigation = () => {
     { name: "Pricing", href: "#pricing" },
     { name: "Why Choose Us", href: "#why-choose-us" },
     { name: "How We Work", href: "#how-we-work" },
+    { name: "FAQ", href: "/faq", isExternal: true },
     { name: "Contact", href: "#contact" },
   ];
 
-  const scrollToSection = (href: string) => {
-    if (href === "#home") {
+  const scrollToSection = (href: string, isExternal?: boolean) => {
+    if (isExternal) {
+      window.location.href = href;
+    } else if (href === "#home") {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
@@ -65,7 +68,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => scrollToSection(item.href, item.isExternal)}
                 className="font-brand-body text-sm xl:text-base text-brand-dark-navy hover:text-brand-deep-blue transition-all duration-300 relative group whitespace-nowrap hover:-translate-y-0.5"
                 aria-label={`Navigate to ${item.name} section`}
               >
@@ -105,7 +108,7 @@ const Navigation = () => {
                 {navItems.map((item) => (
                   <button
                     key={item.name}
-                    onClick={() => scrollToSection(item.href)}
+                    onClick={() => scrollToSection(item.href, item.isExternal)}
                     className="block w-full text-left px-5 py-4 font-brand-body text-base text-brand-dark-navy hover:text-brand-deep-blue hover:bg-gradient-to-r hover:from-brand-light-gray/40 hover:to-transparent transition-all duration-300 touch-manipulation tap-highlight-transparent min-h-[48px] flex items-center rounded-lg"
                   >
                     {item.name}

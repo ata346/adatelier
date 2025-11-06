@@ -31,6 +31,9 @@ const Footer = () => {
               ].map(link => <a key={link.name} href={link.href} className="font-brand-body text-brand-white/70 hover:text-brand-mid-blue transition-colors duration-300 text-xs sm:text-sm">
                   {link.name}
                 </a>)}
+              <a href="/faq" className="font-brand-body text-brand-white/70 hover:text-brand-mid-blue transition-colors duration-300 text-xs sm:text-sm">
+                FAQ
+              </a>
             </div>
             <div className="pt-2 border-t border-brand-white/10 mt-4">
               <h5 className="font-brand-heading text-sm text-brand-white/90 mb-2">Legal</h5>
