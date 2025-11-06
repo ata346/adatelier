@@ -32,6 +32,17 @@ const Footer = () => {
                   {link.name}
                 </a>)}
             </div>
+            <div className="pt-2 border-t border-brand-white/10 mt-4">
+              <h5 className="font-brand-heading text-sm text-brand-white/90 mb-2">Legal</h5>
+              <div className="flex sm:flex-col items-center sm:items-start justify-center sm:justify-start space-x-4 sm:space-x-0 sm:space-y-2">
+                <a href="/payment-refund" className="font-brand-body text-brand-white/60 hover:text-brand-mid-blue transition-colors duration-300 text-xs">
+                  Payment & Refund
+                </a>
+                <a href="/terms-conditions" className="font-brand-body text-brand-white/60 hover:text-brand-mid-blue transition-colors duration-300 text-xs">
+                  Terms & Conditions
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Contact Info */}
