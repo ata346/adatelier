@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,14 +30,33 @@ const Navigation = () => {
   ];
 
   const scrollToSection = (href: string, isExternal?: boolean) => {
-    if (isExternal) {
-      window.location.href = href;
-    } else if (href === "#home") {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
-    }
     setIsOpen(false);
+    
+    if (isExternal) {
+      navigate(href);
+      return;
+    }
+    
+    // If we're not on the home page, navigate there first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        if (href === "#home") {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          const element = document.querySelector(href);
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Already on home page, just scroll
+      if (href === "#home") {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   return (
