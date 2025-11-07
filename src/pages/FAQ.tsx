@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import {
   Accordion,
   AccordionContent,
@@ -16,7 +18,8 @@ const FAQ = () => {
         description="Find answers to common questions about Ad Atelier's branding and advertising services, pricing, timelines, and how we work with clients and freelancers."
         keywords="FAQ, ad atelier questions, branding services FAQ, freelancer questions, pricing questions"
       />
-      <div className="min-h-screen bg-background">
+      <Navigation />
+      <div className="min-h-screen bg-background pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <Link 
             to="/" 
@@ -451,6 +454,7 @@ const FAQ = () => {
           </section>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

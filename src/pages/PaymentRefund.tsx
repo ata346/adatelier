@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const PaymentRefund = () => {
   return (
@@ -10,7 +12,8 @@ const PaymentRefund = () => {
         description="Learn about Ad Atelier's payment methods, refund policy, and terms for our branding and advertising services in Kerala."
         keywords="payment policy, refund policy, ad atelier payments, branding services payment"
       />
-      <div className="min-h-screen bg-background">
+      <Navigation />
+      <div className="min-h-screen bg-background pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <Link 
             to="/" 
@@ -237,6 +240,7 @@ const PaymentRefund = () => {
           </article>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

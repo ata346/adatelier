@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const TermsConditions = () => {
   return (
@@ -10,7 +12,8 @@ const TermsConditions = () => {
         description="Read Ad Atelier's terms and conditions for our branding and advertising services, including user responsibilities, liability, and intellectual property rights."
         keywords="terms and conditions, ad atelier terms, service terms, legal terms"
       />
-      <div className="min-h-screen bg-background">
+      <Navigation />
+      <div className="min-h-screen bg-background pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <Link 
             to="/" 
@@ -447,6 +450,7 @@ const TermsConditions = () => {
           </article>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
