@@ -11,6 +11,7 @@ const Index = lazy(() => import("./pages/Index"));
 const PaymentRefund = lazy(() => import("./pages/PaymentRefund"));
 const TermsConditions = lazy(() => import("./pages/TermsConditions"));
 const FAQ = lazy(() => import("./pages/FAQ"));
+const Sitemap = lazy(() => import("./pages/Sitemap"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -51,6 +52,7 @@ const App = () => (
             <Route path="/payment-refund" element={<PaymentRefund />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/sitemap" element={<Sitemap />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
