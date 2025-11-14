@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const TermsConditions = () => {
   return (
@@ -16,13 +23,23 @@ const TermsConditions = () => {
       <Navigation />
       <div className="min-h-screen bg-background pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Link 
-            to="/" 
-            className="inline-flex items-center text-brand-mid-blue hover:text-brand-deep-blue transition-colors duration-300 mb-8 group"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300" />
-            Back to Home
-          </Link>
+          <Breadcrumb className="mb-8">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/" className="text-brand-mid-blue hover:text-brand-deep-blue transition-colors duration-300">
+                    Home
+                  </Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage className="text-brand-dark-navy font-semibold">
+                  Terms & Conditions
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
 
           <article className="prose prose-lg max-w-none">
             <header className="mb-8">
