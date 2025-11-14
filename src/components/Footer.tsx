@@ -44,6 +44,9 @@ const Footer = () => {
                 <a href="/terms-conditions" className="font-brand-body text-brand-white/60 hover:text-brand-mid-blue transition-colors duration-300 text-xs">
                   Terms & Conditions
                 </a>
+                <a href="/sitemap" className="font-brand-body text-brand-white/60 hover:text-brand-mid-blue transition-colors duration-300 text-xs">
+                  Sitemap
+                </a>
               </div>
             </div>
           </div>
