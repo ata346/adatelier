@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const PaymentRefund = () => {
   return (
@@ -241,6 +242,7 @@ const PaymentRefund = () => {
         </div>
       </div>
       <Footer />
+      <BackToTop />
     </>
   );
 };
