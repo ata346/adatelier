@@ -6,17 +6,32 @@ import { Menu, X } from "lucide-react";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      
+      // Detect active section
+      if (location.pathname === '/') {
+        const sections = ["home", "about", "services", "pricing", "why-choose-us", "how-we-work", "contact"];
+        const currentSection = sections.find(section => {
+          const element = document.getElementById(section);
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top <= 100 && rect.bottom >= 100;
+          }
+          return false;
+        });
+        if (currentSection) setActiveSection(currentSection);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   const navItems = [
     { name: "Home", href: "#home" },
@@ -87,17 +102,27 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href, item.isExternal)}
-                className="font-brand-body text-sm xl:text-base text-brand-dark-navy hover:text-brand-deep-blue transition-all duration-300 relative group whitespace-nowrap hover:-translate-y-0.5"
-                aria-label={`Navigate to ${item.name} section`}
-              >
-                {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-deep-blue to-brand-mid-blue transition-all duration-300 group-hover:w-full" aria-hidden="true"></span>
-              </button>
-            ))}
+            {navItems.map((item) => {
+              const sectionId = item.href.replace('#', '');
+              const isActive = activeSection === sectionId && location.pathname === '/';
+              
+              return (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href, item.isExternal)}
+                  className={`font-brand-body text-sm xl:text-base transition-all duration-300 relative group whitespace-nowrap hover:-translate-y-0.5 ${
+                    isActive ? 'text-brand-deep-blue font-semibold' : 'text-brand-dark-navy hover:text-brand-deep-blue'
+                  }`}
+                  aria-label={`Navigate to ${item.name} section`}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {item.name}
+                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-brand-deep-blue to-brand-mid-blue transition-all duration-300 ${
+                    isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`} aria-hidden="true"></span>
+                </button>
+              );
+            })}
             <Button 
               variant="hero" 
               size="sm"
@@ -127,15 +152,23 @@ const Navigation = () => {
           <div className="lg:hidden absolute top-full left-0 right-0 z-50 animate-fade-in">
             <div className="mx-4 mt-2 bg-background/98 backdrop-blur-lg rounded-2xl shadow-hover border border-brand-light-gray/50">
               <div className="py-3 space-y-1">
-                {navItems.map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => scrollToSection(item.href, item.isExternal)}
-                    className="block w-full text-left px-5 py-4 font-brand-body text-base text-brand-dark-navy hover:text-brand-deep-blue hover:bg-gradient-to-r hover:from-brand-light-gray/40 hover:to-transparent transition-all duration-300 touch-manipulation tap-highlight-transparent min-h-[48px] flex items-center rounded-lg"
-                  >
-                    {item.name}
-                  </button>
-                ))}
+                {navItems.map((item) => {
+                  const sectionId = item.href.replace('#', '');
+                  const isActive = activeSection === sectionId && location.pathname === '/';
+                  
+                  return (
+                    <button
+                      key={item.name}
+                      onClick={() => scrollToSection(item.href, item.isExternal)}
+                      className={`block w-full text-left px-5 py-4 font-brand-body text-base hover:text-brand-deep-blue hover:bg-gradient-to-r hover:from-brand-light-gray/40 hover:to-transparent transition-all duration-300 touch-manipulation tap-highlight-transparent min-h-[48px] flex items-center rounded-lg ${
+                        isActive ? 'text-brand-deep-blue font-semibold bg-gradient-to-r from-brand-light-gray/30 to-transparent' : 'text-brand-dark-navy'
+                      }`}
+                      aria-current={isActive ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </button>
+                  );
+                })}
                 <div className="px-4 py-3 border-t border-brand-light-gray/30">
                   <Button 
                     variant="hero" 

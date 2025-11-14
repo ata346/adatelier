@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const TermsConditions = () => {
   return (
@@ -451,6 +452,7 @@ const TermsConditions = () => {
         </div>
       </div>
       <Footer />
+      <BackToTop />
     </>
   );
 };

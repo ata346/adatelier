@@ -13,6 +13,7 @@ import LeadCapturePopup from "@/components/LeadCapturePopup";
 import AdPopup from "@/components/AdPopup";
 import SEOHead from "@/components/SEOHead";
 import AIFriendlyData from "@/components/AIFriendlyData";
+import BackToTop from "@/components/BackToTop";
 
 const Index = () => {
   return (
@@ -100,6 +101,7 @@ const Index = () => {
       <WhatsAppWidget />
       <LeadCapturePopup />
       <AdPopup />
+      <BackToTop />
     </div>
     </>
   );

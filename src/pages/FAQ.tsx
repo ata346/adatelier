@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 import {
   Accordion,
   AccordionContent,
@@ -455,6 +456,7 @@ const FAQ = () => {
         </div>
       </div>
       <Footer />
+      <BackToTop />
     </>
   );
 };
