@@ -4,6 +4,7 @@ import { Home, Search, FileQuestion, FileText, CreditCard, Map, ArrowRight } fro
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import NotFoundIllustration from "@/components/NotFoundIllustration";
 
 const NotFound = () => {
   const location = useLocation();
@@ -42,9 +43,14 @@ const NotFound = () => {
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto px-4 py-16 sm:py-24">
         <div className="max-w-4xl mx-auto">
+          {/* Animated Illustration */}
+          <div className="mb-8 animate-fade-in">
+            <NotFoundIllustration />
+          </div>
+
           {/* Error Code */}
-          <div className="text-center mb-8 animate-fade-in">
-            <h1 className="text-8xl sm:text-9xl font-brand-heading font-bold text-primary mb-4">
+          <div className="text-center mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <h1 className="text-6xl sm:text-7xl font-brand-heading font-bold text-primary mb-4">
               404
             </h1>
             <h2 className="text-2xl sm:text-3xl font-brand-heading font-semibold text-foreground mb-4">
@@ -56,7 +62,7 @@ const NotFound = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="mb-12 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <div className="mb-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <form onSubmit={handleSearch} className="max-w-xl mx-auto">
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
@@ -72,7 +78,7 @@ const NotFound = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <h3 className="text-xl font-brand-heading font-semibold text-foreground mb-6 text-center">
               Quick Links
             </h3>
@@ -84,7 +90,7 @@ const NotFound = () => {
                     key={page.path}
                     to={page.path}
                     className="group"
-                    style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+                    style={{ animationDelay: `${0.5 + index * 0.1}s` }}
                   >
                     <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 hover:border-primary">
                       <div className="flex items-start gap-4">
@@ -124,7 +130,7 @@ const NotFound = () => {
           )}
 
           {/* Primary CTA */}
-          <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: "0.8s" }}>
             <Link to="/">
               <Button size="lg" className="gap-2">
                 <Home className="w-5 h-5" />
