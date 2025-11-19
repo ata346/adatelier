@@ -388,3 +388,14 @@ All colors MUST be HSL.
     padding-right: env(safe-area-inset-right);
   }
 }
+
+/* NProgress Custom Styles */
+#nprogress .bar {
+  background: hsl(var(--brand-mid-blue)) !important;
+  height: 3px !important;
+  box-shadow: 0 0 10px hsl(var(--brand-mid-blue)), 0 0 5px hsl(var(--brand-electric-blue)) !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px hsl(var(--brand-mid-blue)), 0 0 5px hsl(var(--brand-electric-blue)) !important;
+}
