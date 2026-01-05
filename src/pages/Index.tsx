@@ -12,6 +12,7 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 import LeadCapturePopup from "@/components/LeadCapturePopup";
 import AdPopup from "@/components/AdPopup";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
+import StickyBottomBanner from "@/components/StickyBottomBanner";
 import SEOHead from "@/components/SEOHead";
 import AIFriendlyData from "@/components/AIFriendlyData";
 import BackToTop from "@/components/BackToTop";
@@ -103,6 +104,7 @@ const Index = () => {
       <LeadCapturePopup />
       <AdPopup />
       <ExitIntentPopup />
+      <StickyBottomBanner />
       <BackToTop />
     </div>
     </>
